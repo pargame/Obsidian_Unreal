@@ -25,8 +25,8 @@
     설정 값을 가져오고 변경하는 Getter/Setter 함수들입니다. Setter 함수 내부에서는 값을 변경한 후, `ApplySettings()`를 호출하고, 관련 [[Delegate]]를 `Broadcast`하는 로직이 포함됩니다.
 
 ### **3. 사용 방법**
-1.  모든 설정 변수를 담을 `USaveGame` C++ 클래스(예: `UMyGameSettingsSave`)를 생성합니다.
-2.  `UGameInstanceSubsystem`을 상속받는 `USettingsSubsystem` C++ 클래스를 생성합니다.
+1.  모든 설정 변수를 담을 [[USaveGame]] C++ 클래스(예: `UMyGameSettingsSave`)를 생성합니다.
+2.  [[UGameInstanceSubsystem]]을 상속받는 `USettingsSubsystem` C++ 클래스를 생성합니다.
 3.  `Initialize`에서 `UMyGameSettingsSave` 객체를 로드하거나 새로 생성하고, `ApplySettings`를 호출하여 초기 설정을 적용합니다.
 4.  설정 UI 위젯에서는 이 서브시스템의 인스턴스를 가져와서, 현재 설정 값을 표시하고, 사용자가 슬라이더나 버튼을 조작하면 서브시스템의 Setter 함수(예: `SetMasterVolume`)를 호출합니다.
 5.  사용자가 '적용' 또는 '저장' 버튼을 누르면, 서브시스템의 `SaveSettings()` 함수를 호출하여 변경 사항을 디스크에 기록합니다.

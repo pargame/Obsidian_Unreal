@@ -25,28 +25,6 @@
 * **[[UEnhancedInputLocalPlayerSubsystem]]:**
     언리얼 엔진에 내장된 가장 중요한 `ULocalPlayerSubsystem`으로, 각 플레이어의 [[Enhanced Input System]] 관련 설정을 모두 관리합니다.
 
-```cpp
-// C++에서 로컬 플레이어 서브시스템을 사용하는 방법
-#include "MyLocalPlayerSubsystem.h"
-#include "GameFramework/PlayerController.h"
-#include "Engine/LocalPlayer.h"
-
-void AMyPlayerController::SomePlayerSpecificFunction()
-{
-    // 나의 로컬 플레이어 인스턴스를 가져옵니다.
-    if (ULocalPlayer* LocalPlayer = GetLocalPlayer())
-    {
-        // 로컬 플레이어로부터 나의 커스텀 서브시스템 인스턴스를 가져옵니다.
-        UMyLocalPlayerSubsystem* MySubsystem = LocalPlayer->GetSubsystem<UMyLocalPlayerSubsystem>();
-        if (MySubsystem)
-        {
-            // 서브시스템의 공개 함수를 호출합니다.
-            MySubsystem->DoSomethingForThisPlayerOnly();
-        }
-    }
-}
-```
-
 ### **4. 어떤 서브시스템을 사용해야 할까?**
 * **[[UEngineSubsystem]]:** 에디터를 포함한 엔진 전체에서 필요한 기능.
 * **[[UGameInstanceSubsystem]]:** 게임 세션 전체에 걸쳐 레벨 전환과 상관없이 유지되어야 하는 기능.

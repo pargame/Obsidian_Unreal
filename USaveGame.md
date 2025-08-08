@@ -1,4 +1,3 @@
-
 > **게임의 진행 상황, 플레이어 데이터, 설정 등 저장해야 할 모든 정보를 담는 '데이터 컨테이너'입니다.** 이 객체에 저장된 데이터는 파일로 직렬화되어 디스크에 기록됩니다.
 
 ### **1. 주요 역할 및 책임**
@@ -10,8 +9,8 @@
 * **버전 관리 (Versioning):**
     게임이 업데이트되어 저장 데이터의 구조가 바뀌더라도, 이전 버전의 저장 파일을 안전하게 불러올 수 있도록 버전 관리 기능을 지원합니다.
 
-### **2. 핵심 함수 및 속성 (UGameplayStatics 사용)**
-> `USaveGame` 객체의 저장 및 불러오기는 주로 `UGameplayStatics` 클래스의 함수들을 통해 이루어집니다.
+### **2. 핵심 함수 및 속성 ([[UGameplayStatics]] 사용)**
+> `USaveGame` 객체의 저장 및 불러오기는 주로 [[UGameplayStatics]] 클래스의 함수들을 통해 이루어집니다.
 * **`SaveGameToSlot(USaveGame* SaveGameObject, const FString& SlotName, const int32 UserIndex)`:**
     `USaveGame` 객체를 지정된 슬롯 이름으로 디스크에 저장합니다.
 * **`LoadGameFromSlot(const FString& SlotName, const int32 UserIndex)`:**
@@ -25,4 +24,4 @@
 * **[[UGameplayStatics]]:**
     게임플레이와 관련된 다양한 전역 함수를 제공하는 유틸리티 클래스로, 저장/불러오기 기능을 포함합니다.
 * **[[USaveGameSubsystem]]:**
-    `UGameplayStatics`를 이용한 방식보다 더 현대적이고 유연한 저장/불러오기 관리를 제공하는 서브시스템입니다. 비동기 처리와 델리게이트 콜백을 지원하여 편의성을 높였습니다.
+    [[UGameplayStatics]]를 이용한 방식보다 더 현대적이고 유연한 저장/불러오기 관리를 제공하는 서브시스템입니다. 비동기 처리와 [[Delegate]] 콜백을 지원하여 편의성을 높였습니다.

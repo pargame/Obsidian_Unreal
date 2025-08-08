@@ -9,7 +9,7 @@
 * **바운스(튕김) 처리 (Bounce Handling):**
     `bShouldBounce`를 활성화하면, 발사체가 벽이나 바닥에 부딪혔을 때 튕겨 나옵니다. `Bounciness` 속성을 통해 반발 계수를 조절하여 얼마나 탄력적으로 튕길지 결정할 수 있습니다.
 * **목표 추적 (Homing / Target Following):**
-    `HomingTargetComponent`에 특정 컴포넌트(예: 적 캐릭터의 `USceneComponent`)를 지정하면, 발사체가 목표를 향해 유도탄처럼 날아갑니다. `HomingAccelerationMagnitude`를 통해 얼마나 빠르게 방향을 전환할지 조절할 수 있습니다.
+    `HomingTargetComponent`에 특정 컴포넌트(예: 적 캐릭터의 [[USceneComponent]])를 지정하면, 발사체가 목표를 향해 유도탄처럼 날아갑니다. `HomingAccelerationMagnitude`를 통해 얼마나 빠르게 방향을 전환할지 조절할 수 있습니다.
 
 ### **2. 핵심 속성**
 > 발사체의 동작을 디자인하는 데 사용되는 가장 중요한 변수들입니다.
@@ -28,14 +28,6 @@
 
 ### **3. 사용 방법**
 1.  발사체로 사용할 [[AActor]] 블루프린트를 생성합니다.
-2.  컴포넌트 패널에서 `Projectile Movement Component`를 추가합니다. (이 컴포넌트는 시각적 형태가 없으므로, 보통 `SphereComponent`나 `StaticMeshComponent`를 루트로 설정하고 그 아래에 추가합니다.)
+2.  컴포넌트 패널에서 `Projectile Movement Component`를 추가합니다. (이 컴포넌트는 시각적 형태가 없으므로, 보통 [[USphereComponent]]나 [[UStaticMeshComponent]]를 루트로 설정하고 그 아래에 추가합니다.)
 3.  디테일 패널에서 `InitialSpeed`, `ProjectileGravityScale` 등 원하는 속성을 설정합니다.
 4.  게임플레이 코드(예: 무기 클래스)에서 `SpawnActor` 함수를 통해 이 발사체 액터를 월드에 스폰합니다. 스폰과 동시에 `UProjectileMovementComponent`가 자동으로 발사체의 움직임을 시뮬레이션하기 시작합니다.
-
-```cpp
-// 총구 위치에서 발사체 액터를 스폰하는 예시
-FVector SpawnLocation = GetMuzzleLocation();
-FRotator SpawnRotation = GetMuzzleRotation();
-// ProjectileClass는 UProjectileMovementComponent를 가진 액터 블루프린트입니다.
-GetWorld()->SpawnActor<AProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);
-```

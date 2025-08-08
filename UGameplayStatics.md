@@ -1,4 +1,3 @@
-
 > **언리얼 엔진의 거의 모든 곳에서 필요한 기능들을 모아놓은 '만능 공구함'입니다.** 게임플레이와 관련된 수많은 전역 유틸리티 함수를 제공하는 정적(static) 클래스로, 인스턴스를 만들 필요 없이 어떤 클래스에서든 즉시 호출하여 사용할 수 있습니다.
 
 ### **1. 주요 역할 및 책임**
@@ -32,16 +31,3 @@
 
 ### **3. 사용 방법**
 `UGameplayStatics`의 모든 함수는 정적(static)이므로, 클래스 인스턴스를 만들 필요 없이 헤더 파일만 포함하면 어디서든 `UGameplayStatics::FunctionName()` 형태로 직접 호출할 수 있습니다.
-
-```cpp
-#include "Kismet/GameplayStatics.h"
-
-void AMyActor::DoSomething()
-{
-    // 월드의 (0,0,0) 위치에 MyPawn 클래스의 인스턴스를 생성합니다.
-    UGameplayStatics::SpawnActor<AMyPawn>(GetWorld(), AMyPawn::StaticClass(), FVector::ZeroVector, FRotator::ZeroRotator);
-
-    // 2D 사운드를 재생합니다.
-    UGameplayStatics::PlaySound2D(this, MySoundEffect);
-}
-```

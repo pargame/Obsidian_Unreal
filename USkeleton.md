@@ -16,9 +16,9 @@
 * **`USkeleton` (규격):**
     뼈의 이름과 구조에 대한 '약속' 또는 '설계도'입니다. 시각적인 형태가 없습니다.
 * **[[USkeletalMesh]] (모델):**
-    실제 렌더링될 3D 모델 데이터입니다. `USkeletalMesh`는 반드시 하나의 [[USkeleton]]을 참조하여, 자신의 정점(Vertex)들이 어떤 뼈의 움직임을 따라야 하는지를 결정합니다.
+    실제 렌더링될 3D 모델 데이터입니다. `USkeletalMesh`는 반드시 하나의 `USkeleton`을 참조하여, 자신의 정점(Vertex)들이 어떤 뼈의 움직임을 따라야 하는지를 결정합니다.
 
-하나의 `USkeleton`은 여러 개의 `USkeletalMesh`를 가질 수 있지만, 하나의 `USkeletalMesh`는 단 하나의 `USkeleton`만 가질 수 있습니다.
+하나의 `USkeleton`은 여러 개의 [[USkeletalMesh]]를 가질 수 있지만, 하나의 [[USkeletalMesh]]는 단 하나의 `USkeleton`만 가질 수 있습니다.
 
 ### **3. 리타겟팅 (Retargeting)**
 > `USkeleton`의 가장 강력한 기능 중 하나는 '애니메이션 리타겟팅'입니다.

@@ -1,10 +1,9 @@
-
 > **[[UAudioComponent]]가 재생할 수 있는 모든 '소리 에셋'의 추상적인 기본 형태입니다.** 단일 오디오 파일이든, 여러 소리를 복잡하게 조합한 것이든, 재생 가능한 모든 사운드 관련 에셋은 `USoundBase`를 상속받습니다.
 
 ### **1. 주요 역할 및 책임**
 > `USoundBase`는 언리얼 엔진의 오디오 시스템에서 재생 가능한 사운드의 '규격'을 정의합니다.
 * **재생 가능한 사운드의 기반 (Base for Playable Sounds):**
-    [[UAudioComponent]]의 `SetSound` 함수나 `UGameplayStatics`의 `PlaySound` 계열 함수는 모두 이 `USoundBase` 타입의 객체를 인자로 받습니다. 이를 통해 어떤 종류의 사운드 에셋이든 일관된 방식으로 재생할 수 있습니다.
+    [[UAudioComponent]]의 `SetSound` 함수나 [[UGameplayStatics]]의 `PlaySound` 계열 함수는 모두 이 `USoundBase` 타입의 객체를 인자로 받습니다. 이를 통해 어떤 종류의 사운드 에셋이든 일관된 방식으로 재생할 수 있습니다.
 * **공통 속성 제공 (Provides Common Properties):**
     모든 파생 사운드 클래스가 공유하는 기본 속성(예: 동시 재생 가능한 최대 수, 사운드 분류 등)을 정의합니다.
 
@@ -21,4 +20,4 @@
 * **[[UGameplayStatics]]:**
     `PlaySoundAtLocation`, `SpawnSound2D` 등의 함수를 통해 `USoundBase` 에셋을 간편하게 재생할 수 있는 유틸리티 함수들을 제공합니다.
 * **`USoundAttenuation`:**
-    3D 월드에서 소리가 거리에 따라 어떻게 감쇠할지에 대한 규칙을 정의하는 데이터 에셋으로, `USoundBase`에 적용하여 공간감을 만듭니다.
+    3D 월드에서 소리가 거리에 따라 어떻게 감쇠할지에 대한 규칙을 정의하는 데이터 애셋으로, `USoundBase`에 적용하여 공간감을 만듭니다.

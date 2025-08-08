@@ -5,7 +5,7 @@
 * **애니메이션 로직 실행 (Executing Animation Logic):**
     [[UAnimBlueprint]]의 이벤트 그래프와 애님 그래프에 정의된 로직을 매 프레임 실행하여, 최종적으로 뼈대의 포즈를 계산하고 [[USkeletalMeshComponent]]에 전달합니다.
 * **게임플레이 데이터 수집 (Gathering Gameplay Data):**
-    자신이 소유한 [[APawn]]으로부터 속도, 방향, 공중 부양 여부, 조준 각도 등 애니메이션에 필요한 변수들을 가져와서, 애님 그래프에서 사용할 수 있도록 내부 변수에 저장하는 역할을 합니다. 이 작업은 주로 이벤트 그래프의 `BlueprintUpdateAnimation` [[Event|이벤트]]에서 이루어집니다.
+    자신이 소유한 [[APawn]]으로부터 속도, 방향, 공중 부양 여부, 조준 각도 등 애니메이션에 필요한 변수들을 가져와서, 애님 그래프에서 사용할 수 있도록 내부 변수에 저장하는 역할을 합니다. 이 작업은 주로 이벤트 그래프의 `BlueprintUpdateAnimation` [[Event]]에서 이루어집니다.
 * **상태 정보 제공 (Providing State Information):**
     현재 어떤 상태 머신에 있는지, 어떤 애니메이션이 재생 중인지 등의 정보를 외부에 제공하여, 게임플레이 코드가 애니메이션 상태에 따라 특정 로직을 실행할 수 있도록 돕습니다.
 * **몽타주 제어 (Controlling Montages):**
@@ -16,7 +16,7 @@
 * `NativeInitializeAnimation()`:
     애님 인스턴스가 처음 생성될 때 한 번 호출되는 C++ 초기화 함수입니다.
 * `NativeUpdateAnimation(float DeltaSeconds)`:
-    매 프레임 호출되는 C++ 업데이트 함수입니다. 블루프린트의 `BlueprintUpdateAnimation` [[Event|이벤트]]와 동일한 역할을 하며, 여기서 게임플레이 변수를 가져와 업데이트합니다.
+    매 프레임 호출되는 C++ 업데이트 함수입니다. 블루프린트의 `BlueprintUpdateAnimation` [[Event]]와 동일한 역할을 하며, 여기서 게임플레이 변수를 가져와 업데이트합니다.
 * `TryGetPawnOwner()`:
     이 애님 인스턴스를 소유하고 있는 [[APawn]]에 대한 포인터를 안전하게 가져옵니다. 애니메이션에 필요한 데이터를 얻기 위해 가장 먼저 호출되는 함수 중 하나입니다.
 * `Montage_Play(UAnimMontage* MontageToPlay, ...)`:
@@ -32,4 +32,3 @@
     개발자가 에디터에서 편집하는 애셋입니다. 컴파일하면 내부적으로 `UAnimInstance`를 상속받는 새로운 C++ 클래스가 생성됩니다.
 * **`UAnimInstance` (객체/인스턴스):**
     게임이 실행될 때, [[USkeletalMeshComponent]]는 [[UAnimBlueprint]]가 정의한 `UAnimInstance` 클래스의 인스턴스를 생성하여 메모리에 올립니다. 모든 애니메이션 계산은 이 인스턴스 객체에서 일어납니다.
-

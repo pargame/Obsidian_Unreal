@@ -1,3 +1,4 @@
+
 > **월드에 배치할 수 있는 가장 단순한 형태의 '카메라'입니다.** 레벨의 특정 지점에서 특정 방향을 바라보는 시점을 나타내기 위해 사용되며, 게임플레이 중에 카메라를 동적으로 전환하거나 시네마틱 시퀀스를 연출하는 데 기본적인 빌딩 블록 역할을 합니다.
 
 ### **1. 주요 역할 및 책임**
@@ -23,23 +24,7 @@
 * **디버깅 및 개발:**
     개발 중에 특정 위치를 쉽게 확인하기 위한 북마크처럼 사용할 수 있습니다.
 
-```cpp
-// 블루프린트나 C++에서 플레이어의 시점을 특정 ACameraActor로 전환하는 예시
 
-// 월드에 배치된 MyCameraActor에 대한 참조가 필요합니다.
-UPROPERTY(EditAnywhere)
-ACameraActor* MyCameraActor;
-
-void AMyPlayerController::SwitchToCustomCamera()
-{
-    if (MyCameraActor)
-    {
-        // 플레이어의 뷰 타겟을 MyCameraActor로 설정합니다.
-        // 1초 동안 부드럽게 전환됩니다.
-        SetViewTargetWithBlend(MyCameraActor, 1.0f);
-    }
-}
-```
 
 ### **4. `ACameraActor` vs. `APlayerCameraManager`**
 * **`ACameraActor` (카메라 자체):**

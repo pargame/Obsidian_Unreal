@@ -1,3 +1,4 @@
+
 > **스팀, Xbox Live, PlayStation Network 등 플랫폼별 온라인 서비스를 통합된 방식으로 접근하게 해주는 '표준 인터페이스'입니다.** 이를 통해 개발자는 플랫폼에 종속되지 않는 코드로 멀티플레이어 세션, 친구 목록, 도전 과제, 리더보드 등의 기능을 구현할 수 있습니다.
 
 ### **1. 주요 역할 및 책임**
@@ -20,22 +21,6 @@
 ### **3. 사용 방법**
 1.  **모듈 활성화:** `build.cs` 파일에 `OnlineSubsystem`과 사용할 플랫폼 모듈(예: `OnlineSubsystemNull`)을 추가합니다.
 2.  **설정:** `DefaultEngine.ini` 파일에 사용할 기본 온라인 서브시스템을 지정합니다.
-    ```ini
-    [OnlineSubsystem]
-    DefaultPlatformService = Null
-    ```
+    
 3.  **코드에서 접근:**
-    ```cpp
-    #include "OnlineSubsystem.h"
-    #include "Interfaces/OnlineSessionInterface.h"
-
-    IOnlineSubsystem* OnlineSub = IOnlineSubsystem::Get();
-    if (OnlineSub)
-    {
-        IOnlineSessionPtr SessionInterface = OnlineSub->GetSessionInterface();
-        if (SessionInterface.IsValid())
-        {
-            // 세션 관련 작업 수행
-        }
-    }
-    ```
+    

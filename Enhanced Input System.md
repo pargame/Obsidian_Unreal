@@ -1,4 +1,3 @@
-
 > **데이터 기반의 유연하고 강력한 차세대 입력 시스템입니다.** 기존의 고정적인 축/액션 매핑 방식에서 벗어나, '입력 액션'([[UInputAction]])과 '매핑 컨텍스트'([[UInputMappingContext]])라는 개념을 도입하여, 게임의 상황에 따라 입력 방식을 동적으로 변경하고 복잡한 입력을 쉽게 처리할 수 있도록 설계되었습니다.
 
 ### **1. 핵심 철학: 관심사의 분리**
@@ -14,7 +13,7 @@
     *   **[[UEnhancedInputLocalPlayerSubsystem]]:** 플레이어의 현재 상황에 맞는 [[UInputMappingContext]]를 동적으로 추가하거나 제거하여, 활성화된 입력 규칙을 관리하는 **중앙 허브**입니다.
 
 *   **3. 실행 계층 (Execution Layer): "누가" 실행할 것인가?**
-    *   **[[UEnhancedInputComponent]]:** [[UInputAction]]이 발동되었을 때, 실제로 어떤 C++ 함수나 블루프린트 [[Event|이벤트]]를 실행할지 **바인딩(연결)**하는 역할을 합니다.
+    *   **[[UEnhancedInputComponent]]:** [[UInputAction]]이 발동되었을 때, 실제로 어떤 C++ 함수나 블루프린트 [[Event]]를 실행할지 **바인딩(연결)**하는 역할을 합니다.
 
 ### **2. 기존 시스템과의 비교**
 | 특징 | 기존 입력 시스템 (Legacy) | 강화된 입력 시스템 (Enhanced) |

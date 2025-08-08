@@ -1,3 +1,4 @@
+
 > **[[Enhanced Input System]]에서 [[UInputAction]]이 어떤 상태에 도달했는지를 나타내는 '입력 상태의 종류'를 정의한 열거형(Enum)입니다.** `BindAction` 함수를 통해 특정 [[UInputAction]]과 C++ 함수를 연결할 때, 어떤 상태에서 함수를 호출할지를 결정하는 핵심적인 조건으로 사용됩니다.
 
 ### **1. 주요 역할 및 책임**
@@ -10,9 +11,9 @@
 ### **2. 열거형 값의 종류**
 > `ETriggerEvent`는 다음과 같은 주요 값들을 가집니다.
 * **`None`:**
-    아무 [[Event|이벤트]]도 아님을 의미합니다. (거의 사용되지 않음)
+    아무 [[Event]]도 아님을 의미합니다. (거의 사용되지 않음)
 * **`Triggered`:**
-    **가장 일반적으로 사용되는 [[Event|이벤트]]입니다.** [[UInputTrigger]]의 조건이 완전히 충족되었을 때 발생합니다. 예를 들어, `Pressed` 트리거에서는 키가 눌린 순간, `Held` 트리거에서는 지정된 시간을 채운 순간, `Pulse` 트리거에서는 매 인터벌마다 발생합니다.
+    **가장 일반적으로 사용되는 [[Event]]입니다.** [[UInputTrigger]]의 조건이 완전히 충족되었을 때 발생합니다. 예를 들어, `Pressed` 트리거에서는 키가 눌린 순간, `Held` 트리거에서는 지정된 시간을 채운 순간, `Pulse` 트리거에서는 매 인터벌마다 발생합니다.
 * **`Started`:**
     입력이 처음으로 활성화되어 트리거링 과정이 시작되었을 때 한 번 발생합니다. 예를 들어, `Hold` 트리거의 경우 키를 누르기 시작한 바로 그 순간에 발생합니다.
 * **`Ongoing`:**
@@ -24,20 +25,5 @@
 
 ### **3. 사용 예시**
 > [[UEnhancedInputComponent]]의 `BindAction` 함수에서 `ETriggerEvent`를 사용하는 일반적인 패턴입니다.
-```cpp
-void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-    if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
-    {
-        // ChargeAttackAction이 시작되면 StartCharge 함수를 호출
-        EnhancedInputComponent->BindAction(ChargeAttackAction, ETriggerEvent::Started, this, &AMyCharacter::StartCharge);
 
-        // ChargeAttackAction이 완료되면(충분히 홀드했으면) DoChargeAttack 함수를 호출
-        EnhancedInputComponent->BindAction(ChargeAttackAction, ETriggerEvent::Triggered, this, &AMyCharacter::DoChargeAttack);
-
-        // ChargeAttackAction이 중간에 취소되면(홀드하다 떼면) CancelCharge 함수를 호출
-        EnhancedInputComponent->BindAction(ChargeAttackAction, ETriggerEvent::Canceled, this, &AMyCharacter::CancelCharge);
-    }
-}
-```
 이처럼 `ETriggerEvent`를 활용하면, 하나의 [[UInputAction]]에 대해 여러 다른 상태에 각기 다른 함수를 바인딩하여 복잡한 입력 로직을 체계적으로 구현할 수 있습니다.

@@ -1,3 +1,4 @@
+
 > **[[AActor]]에게 '움직이는 능력' 그 자체를 부여하는 물리 엔진의 핵심입니다.** 중력의 영향을 받게 하고, 속도를 조절하며, 다른 물체와의 충돌을 처리하는 등, [[AActor]]가 월드 내에서 물리 법칙에 따라 움직이도록 만드는 모든 복잡한 계산을 담당합니다.
 
 ### **1. 주요 역할 및 책임**
@@ -12,15 +13,15 @@
 ### **2. 핵심 함수 및 속성**
 > 컴포넌트의 동작을 제어하고 현재 이동 상태를 파악하는 데 사용되는 주요 변수와 함수들입니다.
 * `Velocity`:
-	현재 [[UActorComponent]]가 움직이는 속도와 방향을 나타내는 벡터(FVector)입니다.
+	현재 `UMovementComponent`가 움직이는 속도와 방향을 나타내는 벡터(FVector)입니다.
 * `GravityScale`:
-	이 [[UActorComponent]]에 적용되는 중력의 크기를 조절합니다. 0으로 설정하면 중력의 영향을 받지 않습니다.
+	이 `UMovementComponent`에 적용되는 중력의 크기를 조절합니다. 0으로 설정하면 중력의 영향을 받지 않습니다.
 * `MaxSpeed`:
-	이 [[UActorComponent]]가 도달할 수 있는 최대 속도를 제한합니다.
+	이 `UMovementComponent`가 도달할 수 있는 최대 속도를 제한합니다.
 * `StopMovementImmediately()`:
 	모든 움직임을 즉시 멈춥니다. `Velocity`를 `0`으로 설정합니다.
 * `IsFalling()` / `IsMovingOnGround()`:
-	[[UActorComponent]]가 현재 공중에 떠 있는지(낙하 중인지) 또는 지면에 붙어 있는지 확인합니다.
+	`UMovementComponent`가 현재 공중에 떠 있는지(낙하 중인지) 또는 지면에 붙어 있는지 확인합니다.
 
 ### **3. 주요 서브클래스**
 > `UMovementComponent`는 그 자체로 쓰이기보다는, 특정 목적에 맞게 확장된 자식 클래스들이 주로 사용됩니다.

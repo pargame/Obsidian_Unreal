@@ -5,7 +5,7 @@
 * **메시 렌더링 (Mesh Rendering):**
     지정된 [[UStaticMesh]] 애셋을 월드의 특정 위치에 렌더링하는 주된 역할을 합니다. 머티리얼을 적용하여 메시의 표면 재질을 결정할 수 있습니다.
 * **충돌 및 물리 (Collision and Physics):**
-    [[UStaticMesh]] 애셋에 포함된 충돌 설정을 사용하여, 다른 오브젝트와의 충돌(Block)이나 겹침(Overlap) [[Event|이벤트]]를 감지합니다. 또한, 물리 시뮬레이션을 활성화하여 중력의 영향을 받거나 외부 힘에 반응하게 만들 수 있습니다.
+    [[UStaticMesh]] 애셋에 포함된 충돌 설정을 사용하여, 다른 오브젝트와의 충돌(Block)이나 겹침(Overlap) [[Event]]를 감지합니다. 또한, 물리 시뮬레이션을 활성화하여 중력의 영향을 받거나 외부 힘에 반응하게 만들 수 있습니다.
 * **레벨 디자인의 기본 단위 (Fundamental Unit of Level Design):**
     벽, 바닥, 가구, 소품 등 레벨을 구성하는 대부분의 시각적 요소는 [[AStaticMeshActor]]에 포함된 이 `UStaticMeshComponent`를 통해 구현됩니다.
 

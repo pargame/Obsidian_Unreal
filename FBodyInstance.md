@@ -1,3 +1,4 @@
+
 > **[[UPrimitiveComponent]]의 모든 물리적 속성을 담고 있는 '물리 속성 데이터 묶음'입니다.** 질량, 마찰력, 감쇠, 물리 활성화 여부 등 물리 엔진이 오브젝트를 시뮬레이션하는 데 필요한 모든 정보를 포함하는 핵심적인 C++ 구조체(`struct`)입니다.
 
 ### **1. 주요 역할 및 책임**
@@ -28,20 +29,5 @@
 
 ### **3. 접근 및 사용 방법**
 > `FBodyInstance`는 [[UPrimitiveComponent]]의 멤버 변수이므로, 컴포넌트에 대한 포인터를 통해 접근할 수 있습니다.
-```cpp
-[[UStaticMeshComponent]]* MyMesh = ...;
 
-// 컴포넌트로부터 BodyInstance에 대한 포인터를 가져옵니다.
-if (FBodyInstance* BodyInst = MyMesh->GetBodyInstance())
-{
-    // 런타임에 질량을 변경합니다.
-    BodyInst->SetMassScale(2.0f); // 기본 질량의 2배로 설정
-
-    // 물리 시뮬레이션을 켭니다.
-    MyMesh->SetSimulatePhysics(true);
-
-    // 특정 방향으로 충격량을 가합니다.
-    BodyInst->AddImpulse(FVector(1000.f, 0, 0));
-}
-```
 `FBodyInstance`의 속성들은 대부분 런타임에 직접 수정하기보다는, [[UPrimitiveComponent]]가 제공하는 래퍼(wrapper) 함수(예: `SetSimulatePhysics`, `AddImpulse`)를 통해 제어하는 것이 더 안전하고 일반적입니다.

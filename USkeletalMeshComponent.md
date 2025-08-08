@@ -1,4 +1,5 @@
-> **움직이는 모든 것의 '뼈대'이자 '피부'입니다.** 3D 모델에 Skeleton이라는 뼈대를 심어, 애니메이션을 통해 생동감 넘치는 움직임을 만들어내는 모든 캐릭터와 생명체의 시각적 핵심입니다. 
+
+> **움직이는 모든 것의 '뼈대'이자 '피부'입니다.** 3D 모델에 [[USkeleton]]이라는 뼈대를 심어, 애니메이션을 통해 생동감 넘치는 움직임을 만들어내는 모든 캐릭터와 생명체의 시각적 핵심입니다. 
 
 ### **1. 주요 역할 및 책임**
 > [[UPrimitiveComponent]]를 상속받아 렌더링과 충돌이 가능하면서도, 뼈대를 이용한 애니메이션이라는 강력한 기능을 추가로 제공합니다.
@@ -7,7 +8,7 @@
 * **소켓 시스템 (Socket System):**
       내부 뼈대의 특정 뼈(Bone)에 '소켓'이라는 이름 붙은 위치를 지정할 수 있습니다. 이를 통해 캐릭터의 손에 무기를 붙이거나, 발밑에서 먼지 파티클을 생성하는 등, 애니메이션에 맞춰 다른 오브젝트를 정교하게 부착할 수 있습니다.
 * **물리 기반 애니메이션 (Physics-Based Animation):**
-      [[UPhysicsAsset]]을 사용하여 래그돌(Ragdoll) 물리 시뮬레이션을 지원합니다. SetSimulatePhysics(true)를 호출하면, 애니메이션 대신 물리 법칙에 따라 캐릭터가 쓰러지거나 날아가는 효과를 만들 수 있습니다.
+      [[UPhysicsAsset]]을 사용하여 래그돌(Ragdoll) 물리 시뮬레이션을 지원합니다. `SetSimulatePhysics(true)`를 호출하면, 애니메이션 대신 물리 법칙에 따라 캐릭터가 쓰러지거나 날아가는 효과를 만들 수 있습니다.
 
 ### **2. 핵심 함수 및 속성**
 > 컴포넌트의 외형과 애니메이션을 제어하는 데 사용되는 필수적인 변수와 함수들입니다.
@@ -22,7 +23,7 @@
 * `AnimClass`:
       `AnimationMode`가 `AnimationBlueprint`일 때, 사용할 [[UAnimBlueprint]] 클래스를 지정합니다.
 * `PlayAnimation(UAnimationAsset* NewAnimToPlay, bool bLooping)`:
-      지정한 단일 애니메이션 애셋을 한 번 또는 반복하여 재생합니다.
+      지정한 단일 [[UAnimationAsset]]을 한 번 또는 반복하여 재생합니다.
 * `GetSocketTransform(FName InSocketName)`:
       지정한 이름의 소켓이 현재 프레임의 애니메이션에서 차지하는 `WorldTransform`을 반환합니다.
 * `SetSimulatePhysics(bool bSimulate)`:

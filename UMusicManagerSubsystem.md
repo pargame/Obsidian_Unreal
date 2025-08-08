@@ -9,7 +9,7 @@
 * **중앙 집중식 제어 (Centralized Control):**
     음악 볼륨, 재생/정지 등 모든 음악 관련 제어를 이 서브시스템을 통해 처리하도록 하여, 코드의 중복을 막고 유지보수를 용이하게 합니다.
 * **데이터 기반 관리 (Data-Driven Management):**
-    실제 `USoundBase` 애셋을 직접 참조하는 대신, 볼륨, 페이드 시간 등의 메타데이터를 포함하는 `UMusicDataAsset`과 같은 [[Data Asset]]을 사용하여 음악을 관리함으로써 유연성을 높입니다.
+    실제 [[USoundBase]] 애셋을 직접 참조하는 대신, 볼륨, 페이드 시간 등의 메타데이터를 포함하는 `UMusicDataAsset`과 같은 [[Data Asset]]을 사용하여 음악을 관리함으로써 유연성을 높입니다.
 
 ### **2. 구현 아이디어**
 > `UMusicManagerSubsystem`을 구현할 때 고려할 수 있는 주요 기능과 변수들입니다.
@@ -23,21 +23,7 @@
     전체 배경 음악의 볼륨을 조절하는 함수입니다.
 
 ### **3. 사용 방법**
-1.  `UGameInstanceSubsystem`을 상속받는 `UMusicManagerSubsystem` C++ 클래스를 생성합니다.
+1.  [[UGameInstanceSubsystem]]을 상속받는 `UMusicManagerSubsystem` C++ 클래스를 생성합니다.
 2.  내부에 [[UAudioComponent]]와 필요한 함수들을 구현합니다.
 3.  게임 내 어디서든 `GetGameInstance()->GetSubsystem<UMusicManagerSubsystem>()`을 통해 서브시스템에 접근합니다.
 4.  예를 들어, 보스전 트리거 볼륨에 플레이어가 들어가면, `MusicManagerSubsystem->ChangeMusic(BossMusicData)`를 호출하여 배경 음악을 보스전 음악으로 변경합니다.
-
-```cpp
-// 보스전 액터에서 음악 변경을 요청하는 예시
-void ABossRoomActor::OnPlayerEnter(AActor* PlayerActor)
-{
-    if (UMusicManagerSubsystem* MusicManager = GetGameInstance()->GetSubsystem<UMusicManagerSubsystem>())
-    {
-        if (BossMusicData)
-        {
-            MusicManager->ChangeMusic(BossMusicData, 2.0f); // 2초에 걸쳐 보스 음악으로 전환
-        }
-    }
-}
-```

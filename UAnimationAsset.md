@@ -1,3 +1,4 @@
+
 > **[[USkeletalMeshComponent]]가 재생할 수 있는 모든 종류의 '애니메이션 데이터'를 대표하는 최상위 클래스입니다.** 걷기, 뛰기 같은 기본적인 애니메이션부터, 여러 애니메이션을 조합한 복잡한 시퀀스까지, 뼈대의 포즈를 시간에 따라 변화시키는 모든 애셋이 바로 `UAnimationAsset`입니다.
 
 ### **1. 주요 역할 및 책임**
@@ -22,15 +23,3 @@
 
 ### **3. 사용 방법**
 > `UAnimationAsset`은 코드나 블루프린트에서 변수 타입으로 자주 사용됩니다. 이를 통해 어떤 종류의 애니메이션 애셋이든 유연하게 할당하고 재생할 수 있습니다.
-```cpp
-// UAnimationAsset 변수를 선언합니다.
-UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
-TObjectPtr<UAnimationAsset> DeathAnimation;
-
-// 스켈레탈 메시 컴포넌트에서 이 애니메이션을 재생합니다.
-// DeathAnimation 변수에는 UAnimSequence가 할당될 수도 있고, UAnimMontage가 할당될 수도 있습니다.
-if (DeathAnimation)
-{
-    GetMesh()->PlayAnimation(DeathAnimation, false);
-}
-```

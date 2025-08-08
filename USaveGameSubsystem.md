@@ -1,5 +1,4 @@
-
-> **`UGameplayStatics`의 전통적인 저장/불러오기 방식을 넘어, 더욱 체계적이고 유연한 데이터 관리를 지원하는 '차세대 저장 관리 시스템'입니다.** [[USaveGame]] 객체의 생성, 저장, 불러오기 작업을 중앙에서 관리하며, 특히 비동기 처리에 강점을 가집니다.
+> **[[UGameplayStatics]]의 전통적인 저장/불러오기 방식을 넘어, 더욱 체계적이고 유연한 데이터 관리를 지원하는 '차세대 저장 관리 시스템'입니다.** [[USaveGame]] 객체의 생성, 저장, 불러오기 작업을 중앙에서 관리하며, 특히 비동기 처리에 강점을 가집니다.
 
 ### **1. 주요 역할 및 책임**
 > `USaveGameSubsystem`은 게임의 저장/불러오기 로직을 한 곳으로 모아 일관성 있고 편리하게 관리할 수 있도록 돕습니다.
@@ -8,7 +7,7 @@
 * **델리게이트 기반 비동기 처리 (Delegate-based Async Handling):**
     저장 또는 불러오기 작업이 완료되었을 때 [[Delegate]]를 통해 콜백을 받을 수 있어, 비동기 작업 관리가 매우 편리해집니다. 이를 통해 로딩 중 화면 표시 등 사용자 경험을 향상시킬 수 있습니다.
 * **플러그인 및 모듈화 지원 (Plugin & Modularization Support):**
-    서브시스템의 특성상, 게임의 다른 모듈이나 플러그인에서 쉽게 접근하고 확장할 수 있습니다.
+    [[Subsystem]]의 특성상, 게임의 다른 모듈이나 플러그인에서 쉽게 접근하고 확장할 수 있습니다.
 
 ### **2. 핵심 함수 및 속성**
 * **`SaveGameToSlot(USaveGame* SaveGameObject, const FString& SlotName)`:**
@@ -24,6 +23,6 @@
 * **[[USaveGame]]:**
     실제 저장될 데이터를 담고 있는 객체입니다. `USaveGameSubsystem`은 이 객체를 관리하는 주체입니다.
 * **[[UGameInstanceSubsystem]]:**
-    `USaveGameSubsystem`은 `UGameInstanceSubsystem`의 일종으로, 게임 인스턴스의 생명주기를 따릅니다. 즉, 게임이 실행되는 동안 항상 유일한 인스턴스로 존재합니다.
+    `USaveGameSubsystem`은 [[UGameInstanceSubsystem]]의 일종으로, 게임 인스턴스의 생명주기를 따릅니다. 즉, 게임이 실행되는 동안 항상 유일한 인스턴스로 존재합니다.
 * **[[UGameplayStatics]]:**
     전통적으로 저장/불러오기 기능을 제공했던 클래스입니다. `USaveGameSubsystem`은 이 기능들을 더 발전시킨 형태라고 볼 수 있습니다.

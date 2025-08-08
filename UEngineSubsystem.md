@@ -1,7 +1,8 @@
+
 > **언리얼 엔진이 켜지고 꺼질 때까지, 가장 긴 생명 주기를 가지는 '최상위 전역 서비스'입니다.** 게임 월드나 게임 세션의 존재와 무관하게, 엔진 프로세스 자체에 종속되어 에디터와 런타임을 아우르는 가장 근본적인 기능을 제공합니다.
 
 ### **1. 주요 역할 및 책임**
-> [[UGameInstanceSubsystem]]을 넘어, 에디터 환경을 포함한 엔진 자체의 기능을 확장하고 관리하는 역할을 합니다.
+> `UEngineSubsystem`은 [[UGameInstanceSubsystem]]을 넘어, 에디터 환경을 포함한 엔진 자체의 기능을 확장하고 관리하는 역할을 합니다.
 * **엔진 수준의 기능 제공 (Engine-Level Functionality):**
       이 [[Subsystem]]은 게임플레이와 직접적인 관련이 없을 수 있는 저수준(low-level) 시스템이나, 에디터에서도 동작해야 하는 기능을 구현하는 데 사용됩니다.
 * **가장 긴 생명 주기 (The Longest Lifecycle):**
@@ -24,22 +25,3 @@
       Steam, Epic Online Services(EOS) 등 플랫폼 서비스를 엔진 시작과 동시에 초기화하고 관리하는 데 사용될 수 있습니다.
 * **저수준 렌더링 연동:**
       커스텀 렌더링 파이프라인이나 외부 렌더링 라이브러리와의 연동을 관리합니다.
-```cpp
-// C++에서 엔진 [[Subsystem]]을 사용하는 방법
-#include "MyEngineSubsystem.h"
-#include "Engine/Engine.h" // GEngine를 사용하기 위해 필요
-
-void SomeGlobalFunction()
-{
-	// GEngine 전역 변수를 통해 엔진 [[Subsystem]] 인스턴스를 가져옵니다.
-	if (GEngine)
-	{
-		UMyEngineSubsystem* MySubsystem = GEngine->GetSubsystem<UMyEngineSubsystem>();
-		if (MySubsystem)
-		{
-			// [[Subsystem]]의 공개 함수를 호출합니다.
-			MySubsystem->DoSomethingTrulyGlobal();
-		}
-	}
-}
-```

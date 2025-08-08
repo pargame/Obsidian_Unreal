@@ -1,3 +1,4 @@
+
 > **월드 공간에 존재하는 모든 것의 '위치(Location)', '회전(Rotation)', '크기(Scale)'를 하나로 묶어 표현하는 가장 기본적인 공간 데이터 구조체입니다.** 언리얼 엔진에서 공간을 다루는 거의 모든 작업은 이 `FTransform`을 통해 이루어집니다. `F` 접두사는 이 것이 [[UObject]]를 상속받지 않는 일반적인 C++ 구조체(`struct`)임을 의미합니다.
 
 ### **1. 주요 역할 및 책임**
@@ -28,16 +29,3 @@
 일반적으로 에디터의 디테일 패널에서는 `FRotator`로 회전 값을 보여주지만, 내부적인 계산이나 코드에서는 더 안정적인 `FTransform`과 `FQuat`을 사용하는 것이 권장됩니다.
 
 ### **4. 사용 예시**
-```cpp
-// 새로운 FTransform을 생성하고 초기화합니다.
-FVector Location(100.f, 0.f, 50.f);
-FRotator Rotation(0.f, 90.f, 0.f);
-FVector Scale(1.f, 1.f, 1.f);
-FTransform MyTransform(Rotation, Location, Scale);
-
-// 액터의 트랜스폼을 설정합니다.
-MyActor->SetActorTransform(MyTransform);
-
-// 두 트랜스폼을 결합합니다. (부모 트랜스폼 * 자식의 상대 트랜스폼)
-FTransform WorldTransform = ParentTransform * RelativeChildTransform;
-```

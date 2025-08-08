@@ -1,4 +1,5 @@
-> **각각의 월드(레벨)가 살아 숨 쉬는 동안에만 존재하는 '월드 전용 관리자'입니다.** 레벨이 로드될 때 함께 생성되고, 다른 레벨로 이동하여 현재 월드가 파괴될 때 함께 소멸합니다. 특정 맵이나 게임 모드에 종속적인 동적인 시스템을 관리하기에 완벽한 장소입니다.
+
+> **각각의 월드([[UWorld]])가 살아 숨 쉬는 동안에만 존재하는 '월드 전용 관리자'입니다.** 레벨이 로드될 때 함께 생성되고, 다른 레벨로 이동하여 현재 월드가 파괴될 때 함께 소멸합니다. 특정 맵이나 게임 모드에 종속적인 동적인 시스템을 관리하기에 완벽한 장소입니다.
 
 ### **1. 주요 역할 및 책임**
 > `UWorldSubsystem`은 [[UGameInstanceSubsystem]]처럼 레벨을 초월하여 존재하지 않으며, 오직 현재 월드의 컨텍스트 안에서만 유효한 기능을 제공합니다.
@@ -21,20 +22,6 @@
 * **`AIQueryManagerSubsystem`:**
       월드 내의 모든 AI 캐릭터를 추적하고, 플레이어의 위치에 따라 AI들의 행동을 총괄적으로 지시합니다.
 * **`DynamicWorldEventSubsystem`:**
-      현재 월드에서 발생하는 동적인 [[Event|이벤트]](예: 특정 지역에 몬스터 무리 스폰, 보급품 투하)를 관리합니다.
+      현재 월드에서 발생하는 동적인 [[Event]](예: 특정 지역에 몬스터 무리 스폰, 보급품 투하)를 관리합니다.
 * **`ProceduralGenerationSubsystem`:**
       현재 월드가 시작될 때, 절차적 생성 알고리즘을 통해 맵의 일부를 동적으로 생성하고 배치합니다.
-```cpp
-// C++에서 월드 서브시스템을 사용하는 방법
-#include "MyWorldSubsystem.h"
-void AMyActor::SomeFunctionInWorld()
-{
-	// GetWorld() 함수를 통해 현재 월드의 서브시스템 인스턴스를 가져옵니다.
-	UMyWorldSubsystem* MySubsystem = GetWorld()->GetSubsystem<UMyWorldSubsystem>();
-	if (MySubsystem)
-	{
-		// 서브시스템의 공개 함수를 호출합니다.
-		MySubsystem->DoSomethingInThisWorld();
-	}
-}
-```

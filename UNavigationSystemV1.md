@@ -21,28 +21,8 @@
     `MoveTo`와 같은 함수를 통해 `UNavigationSystemV1`에 경로 탐색을 요청하고, 반환된 경로를 따라 [[APawn]]을 이동시키는 주체입니다.
 
 ### **3. 사용 방법**
-> `UNavigationSystemV1`은 보통 개발자가 직접 상호작용하기보다는, [[AAIController]]의 `MoveTo` 함수나 비헤이비어 트리의 `MoveTo` 태스크를 통해 간접적으로 사용됩니다. 하지만 필요하다면 C++ 코드에서 직접 접근하여 고급 기능을 사용할 수 있습니다.
+> `UNavigationSystemV1`은 보통 개발자가 직접 상호작용하기보다는, [[AAIController]]의 `MoveTo` 함수나 [[UBehaviorTree]]의 `MoveTo` 태스크를 통해 간접적으로 사용됩니다. 하지만 필요하다면 C++ 코드에서 직접 접근하여 고급 기능을 사용할 수 있습니다.
 
 1.  **레벨에 `NavMeshBoundsVolume` 배치:** 모드 패널에서 `NavMeshBoundsVolume`을 찾아 레벨에 배치하고, AI가 이동할 모든 영역을 포함하도록 크기를 조절합니다. (단축키 `P`를 누르면 생성된 내비메시를 녹색으로 시각화하여 볼 수 있습니다.)
 2.  **AI 컨트롤러에서 `MoveTo` 호출:** [[AAIController]]에서 `MoveToLocation` 또는 `MoveToActor` 함수를 호출합니다.
 3.  **내부 동작:** `MoveTo` 함수는 내부적으로 `UNavigationSystemV1::FindPathToLocationSynchronously`와 같은 함수를 호출하여 경로를 계산하고, 계산된 경로를 따라 [[APawn]]의 [[UCharacterMovementComponent]]에 이동 명령을 내립니다.
-
-```cpp
-// C++에서 직접 내비게이션 시스템을 사용하는 예시
-#include "NavigationSystem.h"
-
-void AMyAIController::FindRandomPatrolPoint()
-{
-    // 현재 월드의 내비게이션 시스템 인스턴스를 가져옵니다.
-    if (UNavigationSystemV1* NavSys = UNavigationSystemV1::GetCurrent(GetWorld()))
-    {
-        FNavLocation RandomLocation;
-        // 현재 폰의 위치에서 500 유닛 반경 내의 랜덤한 도달 가능 지점을 찾습니다.
-        if (NavSys->GetRandomReachablePointInRadius(GetPawn()->GetActorLocation(), 500.0f, RandomLocation))
-        {
-            // 찾은 위치를 블랙보드에 저장하거나, 해당 위치로 이동 명령을 내립니다.
-            GetBlackboardComponent()->SetValueAsVector("PatrolLocation", RandomLocation.Location);
-        }
-    }
-}
-```

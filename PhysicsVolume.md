@@ -1,4 +1,3 @@
-
 > **[[UWorld]]의 특정 공간에 보이지 않는 물리 법칙을 적용하는 영역입니다.** 이 `Volume` 안에 들어온 [[AActor]]는 평소와 다른 중력, 저항, 부력의 영향을 받게 됩니다. 물 속이나 무중력 공간처럼 특별한 환경을 만드는 데 사용됩니다.
 
 ### **1. 주요 역할 및 책임**
@@ -25,9 +24,9 @@
 * `Priority`:
       여러 `PhysicsVolume`이 겹쳐 있을 때, 어떤 `Volume`의 설정을 적용할지 결정합니다. 더 높은 `Priority` 값을 가진 `Volume`이 우선권을 갖습니다.
 
-### **3. 주요 [[Event|이벤트]]**
-> [[AActor]]가 `Volume`에 들어오고 나가는 순간을 감지하여 특정 로직을 실행할 수 있는 [[Event|이벤트]]들입니다.
+### **3. 주요 [[Event]]**
+> [[AActor]]가 `Volume`에 들어오고 나가는 순간을 감지하여 특정 로직을 실행할 수 있는 [[Event]]들입니다.
 * `OnActorEnteredVolume`:
-      [[AActor]]가 이 `PhysicsVolume` 안으로 처음 들어왔을 때 호출되는 [[Event|이벤트]]입니다.
+      [[AActor]]가 이 `PhysicsVolume` 안으로 처음 들어왔을 때 호출되는 [[Event]]입니다.
 * `OnActorLeftVolume`:
-	[[AActor]]가 이 `PhysicsVolume` 밖으로 나갔을 때 호출되는 [[Event|이벤트]]입니다.
+	[[AActor]]가 이 `PhysicsVolume` 밖으로 나갔을 때 호출되는 [[Event]]입니다.

@@ -1,3 +1,4 @@
+
 > **플레이어의 '눈'이 되어 월드를 바라보는 시점을 결정하고, 그 시점에 다채로운 효과를 더하는 '전문 카메라 감독'입니다.** [[APlayerController]]에 의해 소유되며, 최종적으로 화면에 렌더링될 카메라의 위치, 회전, 시야각(FOV) 및 각종 포스트 프로세스 효과를 총괄하여 관리하는 특수한 [[AActor]]입니다.
 
 ### **1. 주요 역할 및 책임**
@@ -25,6 +26,6 @@
 ### **3. [[APlayerController]]와의 관계**
 > `PlayerCameraManager`는 [[APlayerController]]와 떼려야 뗄 수 없는 관계입니다.
 * **소유 관계:**
-    모든 [[APlayerController]]는 자신만의 `APlayerCameraManager` 인스턴스를 자동으로 생성하고 소유합니다. [[APlayerController]]의 `PlayerCameraManager` 변수를 통해 언제든지 접근할 수 있습니다.
+    모든 [[APlayerController]]는 자신만의 [[APlayerCameraManager]] 인스턴스를 자동으로 생성하고 소유합니다. [[APlayerController]]의 `PlayerCameraManager` 변수를 통해 언제든지 접근할 수 있습니다.
 * **역할 분담:**
     [[APlayerController]]가 플레이어의 '의지'와 '입력'을 담당한다면, `PlayerCameraManager`는 그 결과를 플레이어가 어떻게 '볼 것인가'를 담당합니다. 이러한 역할 분담 덕분에 복잡한 카메라 로직을 [[APlayerController]]로부터 분리하여 깔끔하게 관리할 수 있습니다.
