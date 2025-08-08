@@ -24,7 +24,7 @@
 * `OnActorBeginOverlap`:
       다른 `AActor`와 처음으로 겹치기 시작했을 때 호출되는 [[Event|이벤트]]입니다.
 * `OnActorEndOverlap`:
-      다른 `AActor`와의 겹침이 끝났을 때 호출되는 이벤트입니다.
+      다른 `AActor`와의 겹침이 끝났을 때 호출되는 [[Event|이벤트]]입니다.
 * `GetComponents(TArray<UActorComponent*>& Components)`:
       이 `AActor`에 붙어있는 모든 컴포넌트의 목록을 가져옵니다.
 
