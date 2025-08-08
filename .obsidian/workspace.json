@@ -34,6 +34,20 @@
               "icon": "lucide-file",
               "title": "UActorComponent"
             }
+          },
+          {
+            "id": "cf108136bcc44144",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PhysicsVolume.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "PhysicsVolume"
+            }
           }
         ],
         "currentTab": 1
@@ -210,9 +224,16 @@
   },
   "active": "f3149f6f43e59636",
   "lastOpenFiles": [
+    "PhysicsVolume.md",
+    "UBlackboardComponent.md",
+    "UAnimMontage.md",
+    "UBoxComponent.md",
+    "UAnimInstance.md",
+    "AActor.md",
+    "UActorComponent.md",
     "UAnimationAsset.md",
-    "UAnimSequence.md",
     "UAchievementSubsystem.md",
+    "UAnimSequence.md",
     "Online Subsystem.md",
     "FTransform.md",
     "ETriggerEvent.md",
@@ -229,13 +250,6 @@
     "UUserWidget.md",
     "UStaticMesh.md",
     "UNavigationSystemV1.md",
-    "UInputTrigger.md",
-    "UGridPanel.md",
-    "UGameInstanceSubsystem.md",
-    "UEnhancedInputComponent.md",
-    "UDataAsset.md",
-    "UAnimMontage.md",
-    "UAnimInstance.md",
     "무제.canvas"
   ]
 }

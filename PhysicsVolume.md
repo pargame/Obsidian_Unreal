@@ -1,4 +1,3 @@
-
 > **[[UWorld]]의 특정 공간에 보이지 않는 물리 법칙을 적용하는 영역입니다.** 이 `Volume` 안에 들어온 [[AActor]]는 평소와 다른 중력, 저항, 부력의 영향을 받게 됩니다. 물 속이나 무중력 공간처럼 특별한 환경을 만드는 데 사용됩니다.
 
 ### **1. 주요 역할 및 책임**
@@ -13,16 +12,16 @@
       [[UCharacterMovementComponent]]는 자신이 속한 `PhysicsVolume`을 항상 확인하고, 그곳의 물리 설정(중력, 부력 등)을 자신의 이동 계산에 즉시 반영합니다.
 
 ### **2. 핵심 속성**
-> `Volume` 내의 물리 환경을 세밀하게 조정하는 데 사용되는 주요 변수들입니다. 이 값들을 변경하여 원하는 환경을 디자인할 수 있습니다.
-* `bWaterVolume`:
+> `Volume` 내의 물리 환경을 세밀하게 조정하는 데 사용되는 주요 변수들입니다.
+* **`bWaterVolume`:**
 	`true`로 설정하면 이 `Volume`을 물로 취급합니다. [[ACharacter]]가 헤엄칠 수 있게 됩니다.
-* `GravityZ`:
+* **`GravityZ`:**
       `Volume` 내의 Z축(수직) 중력을 설정합니다. [[UWorld]] 기본 중력을 덮어쓰며, 양수 값은 반중력을 의미합니다. `0`으로 설정하면 무중력 상태가 됩니다.
-* `TerminalVelocity`:
+* **`TerminalVelocity`:**
       이 `Volume` 안에서 [[AActor]]가 가질 수 있는 최대 속도를 제한합니다.
-* `FluidFriction`:
+* **`FluidFriction`:**
       `Volume` 내 유체의 저항(마찰력)을 설정합니다. 값이 높을수록 [[AActor]]의 움직임이 둔해집니다.
-* `Priority`:
+* **`Priority`:**
       여러 `PhysicsVolume`이 겹쳐 있을 때, 어떤 `Volume`의 설정을 적용할지 결정합니다. 더 높은 `Priority` 값을 가진 `Volume`이 우선권을 갖습니다.
 
 ### **3. 주요 [[Event]]**
