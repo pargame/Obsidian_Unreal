@@ -1,26 +1,31 @@
-> `Enhanced Input System`은 언리얼 엔진의 현대적인 표준 입력 시스템입니다. 기존 레거시 입력 시스템의 한계를 극복하고, 더 유연하고, 확장 가능하며, 데이터 기반의 입력 처리를 제공하기 위해 설계되었습니다. 시스템의 핵심은 **입력의 '정의(Data)', '처리(Processing)', '실행(Action)'을 명확하게 분리**하는 것입니다.
+> **데이터 기반의 유연하고 강력한 차세대 입력 시스템입니다.** 기존의 고정적인 축/액션 매핑 방식에서 벗어나, '입력 액션([[UInputAction]])'과 '매핑 컨텍스트([[UInputMappingContext]])'라는 개념을 도입하여, 게임의 상황에 따라 입력 방식을 동적으로 변경하고 복잡한 입력을 쉽게 처리할 수 있도록 설계되었습니다.
 
-### **1. 데이터 계층: 입력의 정의 (Data Assets)**
-> 코드 변경 없이 에디터에서 입력 방식을 정의하고 수정할 수 있는 데이터 에셋들입니다.
-* [[UInputAction]] (IA):
-	'점프', '이동', '공격'과 같이 **추상적인 입력 행위 자체**를 정의하는 데이터 에셋입니다. 이 액션이 반환할 값의 타입(`bool`, `float`, `Vector2D` 등)을 지정합니다.
-* [[UInputMappingContext]] (IMC):
-	**'규칙의 집합'** 또는 '키 매핑 테이블'입니다. 특정 하드웨어 입력(예: 키보드 `W` 키, 게임패드 왼쪽 스틱)을 어떤 [[UInputAction|IA]]에 연결할지 매핑 정보를 담고 있습니다.
-* [[UInputModifier]]: 
-	입력의 원시 값을 가공하는 역할을 합니다. (예: `Swizzle`, `Dead Zone`, `Negate`) [[UInputMappingContext|IMC]] 내에서 특정 매핑에 적용할 수 있습니다.
-* [[UInputTrigger]]:
-	입력이 언제 '트리거' 상태가 될지를 결정하는 조건입니다. (예: `Pressed`, `Released`, `Held`, `Tap`) `IMC` 내에서 특정 매핑에 적용할 수 있습니다.
+### **1. 핵심 철학: 관심사의 분리**
+> `Enhanced Input System`의 가장 큰 특징은 입력 처리 과정을 세 단계로 명확하게 분리한 것입니다. 이를 통해 각 부분을 독립적으로 관리하고 재사용할 수 있습니다.
 
-### **2. 처리 계층: 입력의 해석 및 발행 (Processing & Publishing)**
-> 하드웨어 입력을 수신하여, 데이터 계층의 규칙에 따라 해석하고, 게임플레이 시스템이 사용할 수 있는 이벤트로 만들어 발행합니다.
-* [[UEnhancedInputLocalPlayerSubsystem]]:
-	**입력 처리의 중앙 허브**입니다. [[ULocalPlayer]]에 종속되어 있으며, 활성화된 [[UInputMappingContext|IMC]] 목록을 관리하고, 하드웨어 입력을 [[UInputMappingContext|IMC]] 규칙에 따라 해석하여 최종적으로 처리된 [[UInputAction|IA]]의 상태 변화를 **발행(Publish)**합니다.
+*   **1. 데이터 계층 (Data Layer): "무엇을" 할 것인가?**
+    *   **[[UInputAction]] (IA):** '점프', '이동'과 같이 추상화된 **행동** 그 자체를 정의합니다.
+    *   **[[UInputMappingContext]] (IMC):** 특정 키(예: `Space Bar`)를 특정 행동([[UInputAction]])에 연결하는 **규칙의 집합**입니다.
+    *   **[[UInputModifier]]:** 입력의 원시 값을 가공하는 **필터**입니다. (예: 데드존, 축 반전)
+    *   **[[UInputTrigger]]:** 행동이 발동될 **조건**을 정의합니다. (예: 짧게 누르기, 길게 누르기)
 
-### **3. 실행 계층: 이벤트의 구독 및 실행 (Subscription & Execution)**
-> 발행된 이벤트를 받아 실제 게임플레이 로직을 실행합니다.
-* [[UEnhancedInputComponent]]:
-	[[APlayerController]]가 소유하며, [[APawn]](캐릭터)에 의해 설정되는 컴포넌트입니다. 발행된 액션 이벤트를 **구독(Subscribe)**하는 역할을 합니다.
-* `BindAction(const UInputAction* Action, ETriggerEvent TriggerEvent, ...)`:
-	**구독 신청**을 하는 핵심 함수입니다. SetupPlayerInputComponent 내에서 호출되며, "어떤 [[UInputAction|Action]]의 어떤 `TriggerEvent`가 발생하면, 어떤 객체의 어떤 함수를 호출하라"고 [[UEnhancedInputComponent]]에 등록합니다.
-* 액션 이벤트 함수 (예: `Move(const FInputActionValue& Value)`):
-	`BindAction`에 등록된 실제 멤버 함수입니다. 이 함수는 최종적으로 [[UEnhancedInputComponent]]에 의해 호출되며, [[FInputActionValue]] 구조체를 통해 처리된 입력 값을 받아 실제 게임플레이 로직을 수행합니다.
+*   **2. 처리 계층 (Processing Layer): "언제, 어떻게" 처리할 것인가?**
+    *   **[[UEnhancedInputLocalPlayerSubsystem]]:** 플레이어의 현재 상황에 맞는 [[UInputMappingContext]]를 동적으로 추가하거나 제거하여, 활성화된 입력 규칙을 관리하는 **중앙 허브**입니다.
+
+*   **3. 실행 계층 (Execution Layer): "누가" 실행할 것인가?**
+    *   **[[UEnhancedInputComponent]]:** [[UInputAction]]이 발동되었을 때, 실제로 어떤 C++ 함수나 블루프린트 이벤트를 실행할지 **바인딩(연결)**하는 역할을 합니다.
+
+### **2. 기존 시스템과의 비교**
+| 특징 | 기존 입력 시스템 (Legacy) | 강화된 입력 시스템 (Enhanced) |
+| :--- | :--- | :--- |
+| **설정 위치** | 프로젝트 설정 (고정) | 데이터 에셋 (유연, 동적) |
+| **컨텍스트** | 없음 (항상 전역 활성화) | [[UInputMappingContext]]를 통해 상황별 제어 가능 |
+| **입력 처리** | `Pressed`, `Released`만 지원 | `Tap`, `Hold`, `Chorded` 등 복잡한 트리거 지원 |
+| **값 처리** | 단순 축 값 | [[UInputModifier]]를 통해 데드존, 스위즐 등 고급 처리 가능 |
+| **확장성** | 제한적 | C++로 커스텀 트리거/모디파이어 제작 용이 |
+
+### **3. 기본 구현 흐름**
+1.  **[[UInputAction]] 에셋 생성:** 'IA_Move', 'IA_Jump' 등 필요한 행동들을 정의합니다.
+2.  **[[UInputMappingContext]] 에셋 생성:** 'IMC_Default' 컨텍스트를 만들고, `W`키를 'IA_Move'에, `Space Bar`를 'IA_Jump'에 매핑하는 등 규칙을 설정합니다.
+3.  **서브시스템에 컨텍스트 추가:** 플레이어 컨트롤러의 `BeginPlay` 등에서 [[UEnhancedInputLocalPlayerSubsystem]]을 가져와 `AddMappingContext` 함수로 'IMC_Default'를 추가합니다.
+4.  **입력 컴포넌트에 함수 바인딩:** 캐릭터의 `SetupPlayerInputComponent` 함수에서 [[UEnhancedInputComponent]]를 통해 'IA_Move'가 발동되면 `Move()` 함수를, 'IA_Jump'가 발동되면 `Jump()` 함수를 호출하도록 바인딩합니다.

@@ -25,10 +25,14 @@
             "id": "b5f3a8558f808e92",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "Subsystem.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Subsystem"
             }
           }
         ],
@@ -119,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "APlayerController.md",
+                "file": "Subsystem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "APlayerController 의 백링크"
+              "title": "Subsystem 의 백링크"
             }
           },
           {
@@ -138,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "APlayerController.md",
+                "file": "Subsystem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "APlayerController 의 나가는 링크"
+              "title": "Subsystem 의 나가는 링크"
             }
           },
           {
@@ -167,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "APlayerController.md",
+                "file": "Subsystem.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "APlayerController 의 개요"
+              "title": "Subsystem 의 개요"
             }
           },
           {
@@ -204,8 +208,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f7015cccbb74f973",
+  "active": "b5f3a8558f808e92",
   "lastOpenFiles": [
+    "Enhanced Input System.md",
     "UAnimMontage.md",
     "UAnimSequence.md",
     "UPrimaryDataAsset.md",
@@ -231,7 +236,6 @@
     "AActor.md",
     "UWorldSubsystem.md",
     "PhysicsVolume.md",
-    "Subsystem.md",
     "무제.canvas"
   ]
 }
