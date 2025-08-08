@@ -1,3 +1,4 @@
+
 > **이 컴퓨터 앞에 앉아 실제로 게임을 플레이하고 있는 '나 자신'을 나타내는 객체입니다.** 멀티플레이어 게임에 여러 플레이어가 접속해 있더라도, `ULocalPlayer`는 오직 이 기기에서 게임을 조작하는 로컬 플레이어만을 지칭합니다. 화면 분할(Split-screen) 환경이 아니라면, 게임에는 단 하나의 `ULocalPlayer`만 존재합니다.
 
 ### **1. 주요 역할 및 책임**
@@ -5,7 +6,7 @@
 * **플레이어의 유일한 대리인 (Player's Unique Representative):**
       [[UGameInstance]] 내에서 로컬 플레이어 한 명을 고유하게 식별합니다. 이 객체를 통해 [[APlayerController]], 뷰포트, 개인 설정 등에 접근할 수 있습니다.
 * **뷰포트 생성 및 관리 (Viewport Creation and Management):**
-      자신이 세상을 바라볼 '창문'인 [[UGameViewportClient]]를 생성하고 관리할 책임을 가집니다. 화면 분할 시에는 여러 `ULocalPlayer`가 하나의 뷰포트를 나누어 사용하게 됩니다.
+      자신이 세상을 바라볼 '창문'인 [[UGameViewportClient]]를 생성하고 관리할 책임을 가집니다.
 * **플레이어 컨트롤러 소유 (Ownership of Player Controller):**
       자신을 대변하는 [[APlayerController]]를 소유하고 관리합니다. `ULocalPlayer`가 생성될 때, 이 플레이어를 위한 [[APlayerController]]도 함께 생성됩니다.
 * **개인 설정 저장 (Storage for Player-Specific Settings):**

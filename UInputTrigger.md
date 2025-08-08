@@ -1,3 +1,4 @@
+
 > **입력 [[Event]]가 '언제' 액션으로 처리될지를 결정하는 '방아쇠'입니다.** 단순히 키를 누르는 것뿐만 아니라, 짧게 탭하기, 길게 누르기, 두 번 누르기 등 복잡한 입력 패턴을 감지하여, 같은 키라도 다른 방식으로 누르면 다른 행동이 일어나도록 만드는 핵심적인 규칙입니다.
 
 ### **1. 주요 역할 및 책임**
@@ -11,17 +12,17 @@
 
 ### **2. 주요 기본 트리거 종류**
 > [[Enhanced Input System]]은 자주 사용되는 여러 종류의 트리거를 기본으로 제공합니다.
-* **`Pressed`:**
+* **[[UInputTrigger]] `Pressed`:**
 	키가 눌리는 바로 그 프레임에 `Triggered` 상태가 됩니다. 가장 기본적인 트리거입니다.
-* **`Released`:**
+* **[[UInputTrigger]] `Released`:**
       눌렀던 키에서 손을 떼는 바로 그 프레임에 `Triggered` 상태가 됩니다.
-* **`Held`:**
+* **[[UInputTrigger]] `Held`:**
       지정된 시간(`Hold Time Threshold`) 이상으로 키를 계속 누르고 있으면 `Triggered` 상태가 됩니다.
-* **`Tap`:**
+* **[[UInputTrigger]] `Tap`:**
       키를 눌렀다가 지정된 시간(`Tap Speed Threshold`) 안에 떼면 `Triggered` 상태가 됩니다.
-* **`Pulse`:**
+* **[[UInputTrigger]] `Pulse`:**
       키를 누르고 있는 동안, 지정된 시간 간격(`Interval`)마다 반복적으로 `Triggered` 상태가 됩니다. (예: 자동 연사)
-* **`Chorded Action`:**
+* **[[UInputTrigger]] `Chorded Action`:**
       다른 [[UInputAction]]이 활성화되어 있는 상태에서 이 키를 눌러야만 `Triggered` 상태가 됩니다. (예: `Shift` 키를 누른 상태에서 클릭)
 
 ### **3. 사용 방법**
