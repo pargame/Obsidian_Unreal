@@ -25,10 +25,14 @@
             "id": "b5f3a8558f808e92",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "APlayerState.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "APlayerState"
             }
           }
         ],
@@ -119,6 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "APlayerState.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "APlayerState 의 백링크"
             }
           },
           {
@@ -137,11 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "APlayerState.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "나가는 링크"
+              "title": "APlayerState 의 나가는 링크"
             }
           },
           {
@@ -165,12 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "APlayerState.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "APlayerState 의 개요"
             }
           },
           {
@@ -203,6 +210,17 @@
   },
   "active": "b5f3a8558f808e92",
   "lastOpenFiles": [
+    "APlayerCameraManager.md",
+    "APlayerState.md",
+    "ACameraActor.md",
+    "UDataAsset.md",
+    "AGameStateBase.md",
+    "PlayerCameraManager.md",
+    "USkeleton.md",
+    "FTransform.md",
+    "UAnimInstance.md",
+    "USkeletalMesh.md",
+    "UPhysicsAsset.md",
     "Subsystem.md",
     "UActorComponent.md",
     "Enhanced Input System.md",
@@ -218,17 +236,6 @@
     "AController.md",
     "APlayerStart.md",
     "AGameModeBase.md",
-    "UCharacterMovementComponent.md",
-    "UWorld.md",
-    "ACharacter.md",
-    "USkeletalMeshComponent.md",
-    "UPrimitiveComponent.md",
-    "Animation Blueprint.md",
-    "USceneComponent.md",
-    "UEnhancedInputLocalPlayerSubsystem.md",
-    "InputAction.md",
-    "AActor.md",
-    "UWorldSubsystem.md",
     "무제.canvas"
   ]
 }
