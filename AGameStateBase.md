@@ -31,4 +31,4 @@
 * **[[APlayerState]] (개인):**
     특정 플레이어 한 명에게만 관련된 정보입니다. (예: 개인 킬/데스, 핑, 플레이어 이름)
 
-`AGameStateBase`의 `PlayerArray`를 통해 모든 플레이어의 `APlayerState`에 접근할 수 있습니다.
+`AGameStateBase`의 `PlayerArray`를 통해 모든 플레이어의 [[APlayerState]]에 접근할 수 있습니다.

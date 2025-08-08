@@ -5,7 +5,7 @@
 * **최종 뷰 타겟 결정 (Determining the Final View Target):**
     [[APlayerController]]가 제어하는 [[APawn]]을 따라가는 3인칭 카메라, [[APawn]]의 눈 위치에 고정된 1인칭 카메라, 또는 특정 [[AActor]]를 비추는 시네마틱 카메라 등, 현재 어떤 시점을 기준으로 화면을 렌더링할지 결정합니다. `SetViewTarget` 함수를 통해 이 대상을 동적으로 변경할 수 있습니다.
 * **카메라 효과 관리 (Managing Camera Effects):**
-    화면 흔들림(`Camera Shake`), 페이드 인/아웃, 렌즈 효과 등 플레이어의 시점에 적용되는 모든 시각적 효과를 관리하고 재생합니다.
+    화면 흔들림([[UCameraShake]]), 페이드 인/아웃, 렌즈 효과 등 플레이어의 시점에 적용되는 모든 시각적 효과를 관리하고 재생합니다.
 * **포스트 프로세스 제어 (Controlling Post Processing):**
     카메라 매니저 자체에 포스트 프로세스 설정을 적용하여, 월드의 기본 설정과 관계없이 특정 플레이어에게만 다른 시각적 스타일(예: 흑백 화면, 특정 색감)을 보여줄 수 있습니다.
 * **카메라 전환의 부드러운 보간 (Smooth Blending of Camera Transitions):**

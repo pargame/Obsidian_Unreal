@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Event.md",
+                "file": "Subsystem.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Event"
+              "title": "Subsystem"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "`",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,8 +103,7 @@
               "title": "APlayerController"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -124,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Event.md",
+                "file": "Subsystem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Event 의 백링크"
+              "title": "Subsystem 의 백링크"
             }
           },
           {
@@ -143,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Event.md",
+                "file": "Subsystem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Event 의 나가는 링크"
+              "title": "Subsystem 의 나가는 링크"
             }
           },
           {
@@ -172,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Event.md",
+                "file": "Subsystem.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Event 의 개요"
+              "title": "Subsystem 의 개요"
             }
           },
           {
@@ -209,8 +208,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0719a0c906fc0855",
+  "active": "f3149f6f43e59636",
   "lastOpenFiles": [
+    "Event.md",
     "UPanelWidget.md",
     "Data Asset.md",
     "UWidget.md",
@@ -236,7 +236,6 @@
     "UDataAsset.md",
     "UCameraShake.md",
     "UAudioComponent.md",
-    "UAnimSequence.md",
     "무제.canvas"
   ]
 }

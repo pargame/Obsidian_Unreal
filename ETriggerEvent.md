@@ -23,7 +23,7 @@
     입력 액션이 완전히 종료되었을 때 발생합니다. 예를 들어, `Hold` 트리거가 발동된 후 키에서 손을 떼는 순간에 발생합니다.
 
 ### **3. 사용 예시**
-> `UEnhancedInputComponent`의 `BindAction` 함수에서 `ETriggerEvent`를 사용하는 일반적인 패턴입니다.
+> [[UEnhancedInputComponent]]의 `BindAction` 함수에서 `ETriggerEvent`를 사용하는 일반적인 패턴입니다.
 ```cpp
 void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {

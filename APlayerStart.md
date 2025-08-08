@@ -14,7 +14,7 @@
 * `PlayerStartTag`:
     이 `APlayerStart`를 식별하는 데 사용되는 `FName` 태그입니다. 예를 들어, "TeamA_Start" 또는 "BossFight_Entrance"와 같은 태그를 지정할 수 있습니다.
 * `CapsuleComponent`:
-    에디터에서 `APlayerStart`의 위치를 시각적으로 표현하고 선택할 수 있도록 도와주는 캡슐 모양의 컴포넌트입니다. 게임 플레이 중에는 일반적으로 충돌이나 렌더링이 비활성화됩니다.
+    에디터에서 `APlayerStart`의 위치를 시각적으로 표현하고 선택할 수 있도록 도와주는 [[UCapsuleComponent]]입니다. 게임 플레이 중에는 일반적으로 충돌이나 렌더링이 비활성화됩니다.
 
 ### **3. 게임 모드와의 관계**
 > `APlayerStart`는 [[AGameModeBase]]와 긴밀하게 협력하여 동작합니다.

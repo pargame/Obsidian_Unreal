@@ -29,7 +29,7 @@
 ### **3. 접근 및 사용 방법**
 > `FBodyInstance`는 [[UPrimitiveComponent]]의 멤버 변수이므로, 컴포넌트에 대한 포인터를 통해 접근할 수 있습니다.
 ```cpp
-UStaticMeshComponent* MyMesh = ...;
+[[UStaticMeshComponent]]* MyMesh = ...;
 
 // 컴포넌트로부터 BodyInstance에 대한 포인터를 가져옵니다.
 if (FBodyInstance* BodyInst = MyMesh->GetBodyInstance())

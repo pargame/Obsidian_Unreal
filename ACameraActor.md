@@ -11,8 +11,8 @@
 
 ### **2. 핵심 구성 요소**
 > `ACameraActor`는 매우 단순한 구조로 이루어져 있습니다.
-* **`UCameraComponent`:**
-    실질적인 카메라의 모든 기능(FOV, 종횡비, 프로젝션 타입 등)을 담당하는 핵심 컴포넌트입니다. `ACameraActor`는 이 `UCameraComponent`를 담기 위한 편리한 [[AActor]] 래퍼(Wrapper)라고 할 수 있습니다. `ACameraActor`를 생성하면 이 컴포넌트가 자동으로 루트 컴포넌트로 추가됩니다.
+* **[[UCameraComponent]]:**
+    실질적인 카메라의 모든 기능(FOV, 종횡비, 프로젝션 타입 등)을 담당하는 핵심 컴포넌트입니다. `ACameraActor`는 이 [[UCameraComponent]]를 담기 위한 편리한 [[AActor]] 래퍼(Wrapper)라고 할 수 있습니다. `ACameraActor`를 생성하면 이 컴포넌트가 자동으로 루트 컴포넌트로 추가됩니다.
 
 ### **3. 사용 방법**
 > `ACameraActor`는 주로 다음과 같은 상황에서 사용됩니다.
