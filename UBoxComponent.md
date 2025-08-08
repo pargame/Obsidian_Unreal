@@ -1,4 +1,3 @@
-
 > **직육면체(박스) 형태를 가진, 보이지 않는 충돌 및 영역 감지용 컴포넌트입니다.** [[UPrimitiveComponent]]를 상속받아 렌더링과 충돌이 가능하지만, 주로 간단한 트리거 볼륨을 만들거나, 사각형 형태의 오브젝트에 대한 충돌을 효율적으로 처리하는 데 사용됩니다.
 
 ### **1. 주요 역할 및 책임**
@@ -12,11 +11,11 @@
 
 ### **2. 핵심 함수 및 속성**
 > 박스의 크기를 조절하고 현재 상태를 가져오는 데 사용되는 주요 함수들입니다.
-* `SetBoxExtent(FVector InBoxExtent, bool bUpdateOverlaps)`:
+* **`SetBoxExtent(FVector InBoxExtent, bool bUpdateOverlaps)`:**
     박스의 '범위(Extent)'를 설정합니다. Extent는 박스의 중심에서 각 면까지의 거리를 나타내는 벡터이므로, 실제 박스의 전체 크기는 Extent의 2배가 됩니다.
-* `GetScaledBoxExtent()`:
+* **`GetScaledBoxExtent()`:**
     컴포넌트의 스케일을 포함하여 계산된 최종 박스 범위를 반환합니다.
-* `GetUnscaledBoxExtent()`:
+* **`GetUnscaledBoxExtent()`:**
     컴포넌트의 스케일을 고려하지 않은 원본 박스 범위를 반환합니다.
 
 ### **3. 주요 서브클래스**
