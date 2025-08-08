@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ACameraActor.md",
+                "file": "UInputComponent.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "ACameraActor"
+              "title": "UInputComponent"
             }
           }
         ],
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ACameraActor.md",
+                "file": "UInputComponent.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "ACameraActor 의 백링크"
+              "title": "UInputComponent 의 백링크"
             }
           },
           {
@@ -142,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ACameraActor.md",
+                "file": "UInputComponent.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "ACameraActor 의 나가는 링크"
+              "title": "UInputComponent 의 나가는 링크"
             }
           },
           {
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ACameraActor.md",
+                "file": "UInputComponent.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "ACameraActor 의 개요"
+              "title": "UInputComponent 의 개요"
             }
           },
           {
@@ -210,12 +210,15 @@
   },
   "active": "f3149f6f43e59636",
   "lastOpenFiles": [
-    "ACharacter.md",
-    "ACameraActor.md",
-    "AController.md",
+    "ULightComponent.md",
+    "UInputAction.md",
     "AGameMode.md",
+    "AGameState.md",
+    "ACameraActor.md",
     "AAIController.md",
     "AActor.md",
+    "ACharacter.md",
+    "AController.md",
     "FTransform.md",
     "FBodyInstance.md",
     "ETriggerEvent.md",
@@ -233,9 +236,6 @@
     "APlayerStart.md",
     "APawn.md",
     "ALight.md",
-    "AGameStateBase.md",
-    "AGameState.md",
-    "AGameModeBase.md",
     "무제.canvas"
   ]
 }
