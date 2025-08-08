@@ -1,3 +1,4 @@
+
 > `AGameMode`는 [[AGameModeBase]]를 상속받아, '데스매치'나 '깃발 뺏기'와 같이 명확한 시작, 진행, 종료 상태를 가지는 전통적인 멀티플레이어 게임을 위해 설계된 클래스입니다. [[AGameModeBase]]의 모든 기능 위에, **매치 상태 머신(Match State Machine)**과 관련된 추가적인 규칙 및 흐름 제어 기능을 제공합니다.
 
 ### **1. 매치 상태 관리 (Match State Management)**
@@ -15,7 +16,7 @@
 
 ### **2. 게임 규칙 및 스코어링 (Game Rules & Scoring)**
 > 플레이어의 행동에 따른 점수 계산 등, 구체적인 게임 승리 조건을 처리하는 함수들을 포함합니다.
-* `Killed([[AController]]* Killer, [[AController]]* KilledPlayer, [[APawn]]* KilledPawn, TSubclassOf<UDamageType> DamageType)`:
+* `Killed([[AController]]* Killer, [[AController]]* KilledPlayer, [[APawn]]* KilledPawn, TSubclassOf<[[UDamageType]]> DamageType)`:
 	폰이 죽었을 때 게임 모드에 알리기 위해 호출되는 함수입니다. 이 함수 내부에서 점수를 계산하고, 리스폰 로직(`RestartPlayer`)을 호출하는 등의 처리를 합니다.
 * `ShouldReset([[AActor]]* ActorToReset)`:
 	`EndMatch` 후 다음 매치를 위해 특정 액터를 리셋해야 하는지 여부를 결정합니다.
