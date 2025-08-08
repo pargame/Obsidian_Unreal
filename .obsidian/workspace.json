@@ -1,0 +1,222 @@
+{
+  "main": {
+    "id": "9467b79baa1d1275",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ed46761a3d12950",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f3149f6f43e59636",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AStaticMeshActor.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "AStaticMeshActor"
+            }
+          },
+          {
+            "id": "b5f3a8558f808e92",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "41c8208275e1ed01",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef745fc09fae4443",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4294ccb037e5b845",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "0719a0c906fc0855",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "animation blueprint",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "3acb8e9779986a34",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a016297f5233578c",
+    "type": "split",
+    "children": [
+      {
+        "id": "7bafea8f3553b21a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0e39f4b4a59d1a44",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "APlayerController.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "APlayerController 의 백링크"
+            }
+          },
+          {
+            "id": "2797f2166360308c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "APlayerController.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "APlayerController 의 나가는 링크"
+            }
+          },
+          {
+            "id": "b1811f6ba7f97574",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "ae620e6b509fecd6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "APlayerController.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "APlayerController 의 개요"
+            }
+          },
+          {
+            "id": "f7015cccbb74f973",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "f3149f6f43e59636",
+  "lastOpenFiles": [
+    "AStaticMeshActor.md",
+    "UAnimBlueprint.md",
+    "UCharacterMovementComponent.md",
+    "UWorld.md",
+    "UAnimationAsset.md",
+    "ACharacter.md",
+    "USkeletalMeshComponent.md",
+    "UPrimitiveComponent.md",
+    "Animation Blueprint.md",
+    "USceneComponent.md",
+    "UEnhancedInputLocalPlayerSubsystem.md",
+    "InputAction.md",
+    "AActor.md",
+    "UEngineSubsystem.md",
+    "UWorldSubsystem.md",
+    "PhysicsVolume.md",
+    "Subsystem.md",
+    "UInputMappingContext.md",
+    "UActorComponent.md",
+    "무제.canvas",
+    "UEnhancedInputComponent.md",
+    "UMovementComponent.md",
+    "UInputAction.md",
+    "UGameViewportClient.md",
+    "Data Asset.md",
+    "UInputModifier.md",
+    "UInputTrigger.md"
+  ]
+}

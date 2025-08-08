@@ -1,0 +1,11 @@
+{
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "spellcheck": false,
+  "autoPairMarkdown": false,
+  "smartIndentList": true,
+  "livePreview": false,
+  "showIndentGuide": false,
+  "foldIndent": false,
+  "foldHeading": false
+}
