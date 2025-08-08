@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UCanvasPanel.md",
-                "mode": "source",
+                "file": "FTransform.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "UCanvasPanel"
+              "title": "FTransform"
             }
           }
         ],
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "UCanvasPanel.md",
+                "file": "FTransform.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "UCanvasPanel 의 백링크"
+              "title": "FTransform 의 백링크"
             }
           },
           {
@@ -142,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "UCanvasPanel.md",
+                "file": "FTransform.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "UCanvasPanel 의 나가는 링크"
+              "title": "FTransform 의 나가는 링크"
             }
           },
           {
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "UCanvasPanel.md",
+                "file": "FTransform.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "UCanvasPanel 의 개요"
+              "title": "FTransform 의 개요"
             }
           },
           {
@@ -210,32 +210,32 @@
   },
   "active": "f3149f6f43e59636",
   "lastOpenFiles": [
+    "UActorComponent.md",
+    "PlayerCameraManager.md",
+    "PhysicsVolume.md",
+    "Online Subsystem.md",
+    "FTransform.md",
+    "Data Asset.md",
+    "Delegate.md",
+    "AStaticMeshActor.md",
+    "Enhanced Input System.md",
+    "APlayerState.md",
+    "APlayerStart.md",
+    "APlayerCameraManager.md",
+    "APawn.md",
+    "ALight.md",
+    "AGameStateBase.md",
+    "AGameState.md",
+    "AGameModeBase.md",
+    "AGameMode.md",
+    "AController.md",
+    "ACharacter.md",
+    "ACameraActor.md",
+    "AAIController.md",
+    "AActor.md",
     "UCanvasPanel.md",
     "UVerticalBox.md",
     "UImage.md",
-    "UProgressBar.md",
-    "UHorizontalBox.md",
-    "UGridPanel.md",
-    "UTextBlock.md",
-    "USlider.md",
-    "ULightComponent.md",
-    "UButton.md",
-    "UCameraComponent.md",
-    "UInputComponent.md",
-    "AActor.md",
-    "PlayerCameraManager.md",
-    "Subsystem.md",
-    "Event.md",
-    "UPanelWidget.md",
-    "Data Asset.md",
-    "UWidget.md",
-    "UnrealMotionGraphics.md",
-    "UUserWidget.md",
-    "UStaticMeshComponent.md",
-    "UAnimBlueprint.md",
-    "UAnimationAsset.md",
-    "UAIPerceptionComponent.md",
-    "UGameplayStatics.md",
     "무제.canvas"
   ]
 }

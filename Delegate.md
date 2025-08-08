@@ -1,3 +1,4 @@
+
 > **C++의 함수 포인터(Function Pointer)를 객체 지향적으로, 그리고 더욱 안전하고 유연하게 사용할 수 있도록 언리얼 엔진이 재구성한 '함수 대리자'입니다.** 특정 함수의 주소를 변수처럼 저장하고, 원할 때 그 함수를 대신 호출하는 역할을 합니다. 언리얼 엔진의 강력한 [[Event]] 시스템은 바로 이 `Delegate` 기술을 기반으로 구현됩니다.
 
 ### **1. 주요 역할 및 책임**
@@ -40,4 +41,4 @@
 * **UI 이벤트 처리:** [[UButton]]의 `OnClicked` [[Event]]는 `DECLARE_DYNAMIC_MULTICAST_DELEGATE`로 선언된 `Delegate`이며, 버튼 클릭 시 `Broadcast()`를 호출합니다.
 * **충돌 이벤트:** [[UPrimitiveComponent]]의 `OnComponentBeginOverlap` 역시 동적 멀티캐스트 `Delegate`로, 다른 액터와 겹쳤을 때 연결된 모든 함수를 실행시킵니다.
 * **비동기 작업 콜백:** 파일 로딩이나 HTTP 요청과 같은 비동기 작업이 완료되었을 때, 그 결과를 처리할 함수를 `Delegate`로 전달하여 콜백으로 사용합니다.
-* **타이머:** `FTimerManager`의 `SetTimer` 함수는 지정된 시간이 지난 후 호출될 함수를 `Delegate`(FTimerDelegate)로 받습니다.
+* **타이머:** [[FTimerManager]]의 `SetTimer` 함수는 지정된 시간이 지난 후 호출될 함수를 `Delegate`([[FTimerDelegate]])로 받습니다.
