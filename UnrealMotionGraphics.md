@@ -15,9 +15,9 @@
 ### **2. 핵심 클래스**
 * **[[UUserWidget]]:**
     UMG로 만드는 모든 커스텀 UI의 가장 기본적인 부모 클래스입니다. 위젯 블루프린트를 생성하면, 내부적으로는 이 `UUserWidget`을 상속받는 새로운 클래스가 만들어집니다.
-* **`UWidget`:**
+* **[[UWidget]]:**
     UI를 구성하는 가장 기본적인 요소(버튼, 이미지 등)의 부모 클래스입니다.
-* **`UPanelWidget`:**
+* **[[UPanelWidget]]:**
     다른 위젯들을 담을 수 있는 컨테이너 위젯의 부모 클래스입니다. (예: `UCanvasPanel`, `UVerticalBox`, `UGridPanel`)
 
 ### **3. 주요 위젯 종류**
