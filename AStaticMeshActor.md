@@ -11,14 +11,10 @@
 
 ### **2. 핵심 구성 요소**
 > `AStaticMeshActor`는 단 하나의 핵심 컴포넌트로 구성됩니다.
-* **`[[UStaticMeshComponent]]`:**
-
-> [!NOTE]
-> 이 [[AActor]]의 심장부입니다. `AStaticMeshActor`를 생성하면, 이 [[UActorComponent]]가 자동으로 생성되어 **루트 컴포넌트(`Root Component`)**로 설정됩니다.
-> * **메시 데이터:** 렌더링할 [[UStaticMesh]] 에셋에 대한 참조를 가집니다.
-> * **물리 및 충돌:** 물리 시뮬레이션과 충돌 설정을 담당합니다.
-> * **렌더링:** 머티리얼, 가시성 등 렌더링과 관련된 모든 속성을 제어합니다.
-
+* **`[[UStaticMeshComponent]]`:** 이 [[AActor]]의 심장부입니다. `AStaticMeshActor`를 생성하면, 이 [[UActorComponent]]가 자동으로 생성되어 **루트 컴포넌트(`Root Component`)**로 설정됩니다.
+    * **메시 데이터:** 렌더링할 [[UStaticMesh]] 에셋에 대한 참조를 가집니다.
+    * **물리 및 충돌:** 물리 시뮬레이션과 충돌 설정을 담당합니다.
+    * **렌더링:** 머티리얼, 가시성 등 렌더링과 관련된 모든 속성을 제어합니다.
 * **[[AActor]]로부터의 상속:**
       `AStaticMeshActor`는 [[AActor]]이므로, 월드 내에서 위치(`Location`), 회전(`Rotation`), 크기(`Scale`)를 나타내는 **트랜스폼(`Transform`)**을 가집니다.
 

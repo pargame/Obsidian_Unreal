@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AController.md",
+                "file": "UActorComponent.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "AController"
+              "title": "UActorComponent"
             }
           },
           {
@@ -205,10 +205,13 @@
   },
   "active": "f3149f6f43e59636",
   "lastOpenFiles": [
+    "AStaticMeshActor.md",
+    "UEngineSubsystem.md",
+    "UAnimBlueprint.md",
+    "APawn.md",
+    "AController.md",
     "APlayerStart.md",
     "AGameModeBase.md",
-    "AStaticMeshActor.md",
-    "UAnimBlueprint.md",
     "UCharacterMovementComponent.md",
     "UWorld.md",
     "UAnimationAsset.md",
@@ -220,7 +223,6 @@
     "UEnhancedInputLocalPlayerSubsystem.md",
     "InputAction.md",
     "AActor.md",
-    "UEngineSubsystem.md",
     "UWorldSubsystem.md",
     "PhysicsVolume.md",
     "Subsystem.md",
@@ -229,8 +231,6 @@
     "무제.canvas",
     "UEnhancedInputComponent.md",
     "UMovementComponent.md",
-    "UInputAction.md",
-    "UGameViewportClient.md",
-    "Data Asset.md"
+    "UInputAction.md"
   ]
 }
