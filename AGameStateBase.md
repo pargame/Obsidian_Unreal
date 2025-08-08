@@ -1,4 +1,3 @@
-
 > **게임의 '공개적인 상태 정보'를 모든 플레이어에게 복제(Replicate)하여 동기화하는 '게임의 전광판'입니다.** 게임의 경과 시간, 남은 플레이어 수, 현재 점수, 매치 상태 등, 서버뿐만 아니라 모든 클라이언트가 알아야 할 게임의 현재 상태를 담는 역할을 합니다.
 
 ### **1. 주요 역할 및 책임**
@@ -8,7 +7,7 @@
 * **모든 플레이어 목록 관리 (Tracking All Players):**
     `PlayerArray`라는 복제된 배열을 통해, 현재 게임 세션에 참여하고 있는 모든 [[APlayerState]]의 목록을 유지하고 동기화합니다. 이를 통해 각 클라이언트는 다른 모든 플레이어의 존재와 상태를 알 수 있습니다.
 * **게임 규칙과의 연동 (Integration with Game Rules):**
-    [[AGameModeBase]]는 서버에만 존재하지만, `AGameStateBase`는 서버와 모든 클라이언트에 존재합니다. [[AGameModeBase]]가 게임의 규칙을 실행하고 그 결과를 `AGameStateBase`의 변수에 저장하면, 이 정보가 모든 클라이언트에게 전달되어 UI(예: 점수판)에 표시될 수 있습니다.
+    [[AGameModeBase]]는 서버에만 존재하지만, `AGameStateBase`는 서버와 모든 클라이언트에게 존재합니다. [[AGameModeBase]]가 게임의 규칙을 실행하고 그 결과를 `AGameStateBase`의 변수에 저장하면, 이 정보가 모든 클라이언트에게 전달되어 UI(예: 점수판)에 표시될 수 있습니다.
 * **매치 상태 동기화 (Synchronizing Match State):**
     [[AGameMode]]에서 관리하는 게임의 매치 상태(`WaitingToStart`, `InProgress` 등)는 `AGameStateBase`의 `MatchState` 변수를 통해 클라이언트에 복제됩니다.
 
