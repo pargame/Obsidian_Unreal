@@ -1,9 +1,10 @@
+
 > **[[USkeletalMeshComponent]]가 재생할 수 있는 모든 종류의 '애니메이션 데이터'를 대표하는 최상위 클래스입니다.** 걷기, 뛰기 같은 기본적인 애니메이션부터, 여러 애니메이션을 조합한 복잡한 시퀀스까지, 뼈대의 포즈를 시간에 따라 변화시키는 모든 애셋이 바로 `UAnimationAsset`입니다.
 
 ### **1. 주요 역할 및 책임**
 > `UAnimationAsset`은 그 자체로 사용되기보다는, 특정 목적을 가진 다양한 자식 클래스들의 '공통 부모' 역할을 합니다. 이를 통해 어떤 종류의 애니메이션이든 일관된 방식으로 처리하고 재생할 수 있는 기반을 제공합니다.
 * **애니메이션 데이터의 추상화 (Abstraction of Animation Data):**
-    [[USkeletalMeshComponent]]는 구체적인 애니메이션 종류(`UAnimSequence`, `UBlendSpace` 등)를 일일이 알 필요 없이, 그저 `UAnimationAsset` 타입의 애셋을 재생하라는 명령만 내리면 됩니다.
+    [[USkeletalMeshComponent]]는 구체적인 애니메이션 종류([[UAnimSequence]], `UBlendSpace` 등)를 일일이 알 필요 없이, 그저 `UAnimationAsset` 타입의 애셋을 재생하라는 명령만 내리면 됩니다.
 * **애니메이션 정보 제공 (Providing Animation Information):**
     애니메이션의 길이(초), 총 프레임 수 등 모든 종류의 애니메이션이 공통적으로 가지는 기본 정보를 제공합니다.
 * **애니메이션의 기반 (Foundation of Animation):**
