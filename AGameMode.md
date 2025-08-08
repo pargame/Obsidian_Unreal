@@ -5,7 +5,7 @@
 * `MatchState`: 
 	현재 게임의 상태를 나타내는 `FName` 변수입니다. (`WaitingToStart`, `InProgress`, `WaitingPostMatch` 등의 값을 가집니다.)
 * `SetMatchState(FName NewState)`:
-	게임의 MatchState를 지정된 상태로 변경합니다. 상태 변경 시 `OnMatchStateSet` [Event|이벤트]가 호출됩니다.
+	게임의 MatchState를 지정된 상태로 변경합니다. 상태 변경 시 `OnMatchStateSet` [[Event|이벤트]]가 호출됩니다.
 * `StartMatch()`:
 	`MatchState`를 `InProgress`로 설정하여 게임의 주요 로직이 시작되도록 합니다.
 * `EndMatch()`:

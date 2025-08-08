@@ -22,7 +22,7 @@
 * `LaunchCharacter(FVector LaunchVelocity, ...)`:
 	`ACharacter`에게 특정 방향으로 물리적인 힘을 가해 날려 보냅니다. (예: 폭발, 넉백)
 * `OnMovementModeChanged(EMovementMode PrevMovementMode, ...)`:
-	이동 모드(걷기, 수영, 비행 등)가 변경될 때 호출되는 [Event|이벤트]입니다.
+	이동 모드(걷기, 수영, 비행 등)가 변경될 때 호출되는 [[Event|이벤트]]입니다.
 * `IsMovingOnGround()`:
 	`ACharacter`가 현재 지면에 붙어 있는지 확인합니다.
 * `GetBaseAimRotation()`:

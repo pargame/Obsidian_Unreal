@@ -8,8 +8,8 @@
     현재 설정 값들을 [[USaveGame]] 객체를 사용하여 디스크(예: `MyGame/Saved/SaveGames/Settings.sav`)에 저장하고, 게임이 시작될 때 이를 다시 불러와 적용합니다.
 * **즉시 적용 및 반영 (Instant Apply and Reflection):**
     설정 메뉴 UI에서 사용자가 값을 변경하면, 이 서브시스템의 함수를 호출하여 즉시 해당 설정을 게임에 적용합니다. (예: `SetMasterVolume()` 함수는 즉시 오디오 엔진의 볼륨을 조절)
-* **델리게이트를 통한 변경 알림 (Change Notification via Delegates):**
-    특정 설정 값이 변경되었을 때 `OnGraphicsSettingsChanged`, `OnAudioSettingsChanged`와 같은 델리게이트를 `Broadcast`하여, 다른 시스템이나 UI가 변경된 값을 즉시 반영할 수 있도록 합니다.
+* **[[Delegate]]를 통한 변경 알림 (Change Notification via Delegates):**
+    특정 설정 값이 변경되었을 때 `OnGraphicsSettingsChanged`, `OnAudioSettingsChanged`와 같은 [[Delegate]]를 `Broadcast`하여, 다른 시스템이나 UI가 변경된 값을 즉시 반영할 수 있도록 합니다.
 
 ### **2. 구현 아이디어**
 > `USettingsSubsystem`을 구현할 때 고려할 수 있는 주요 기능과 구조입니다.
@@ -22,7 +22,7 @@
 * **`SaveSettings()`:**
     현재 `SettingsData`의 내용을 디스크에 저장합니다.
 * **`GetMasterVolume()` / `SetMasterVolume(float Volume)`:**
-    설정 값을 가져오고 변경하는 Getter/Setter 함수들입니다. Setter 함수 내부에서는 값을 변경한 후, `ApplySettings()`를 호출하고, 관련 델리게이트를 `Broadcast`하는 로직이 포함됩니다.
+    설정 값을 가져오고 변경하는 Getter/Setter 함수들입니다. Setter 함수 내부에서는 값을 변경한 후, `ApplySettings()`를 호출하고, 관련 [[Delegate]]를 `Broadcast`하는 로직이 포함됩니다.
 
 ### **3. 사용 방법**
 1.  모든 설정 변수를 담을 `USaveGame` C++ 클래스(예: `UMyGameSettingsSave`)를 생성합니다.

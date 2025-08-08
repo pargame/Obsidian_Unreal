@@ -30,4 +30,4 @@
 * `OnActorEnteredVolume`:
       [[AActor]]가 이 [[PhysicsVolume]] 안으로 처음 들어왔을 때 호출되는 [[Event|이벤트]]입니다.
 * `OnActorLeftVolume`:
-	[[AActor]]가 이 [[PhysicsVolume]] 밖으로 나갔을 때 호출되는 [Event|이벤트입니다.
+	[[AActor]]가 이 [[PhysicsVolume]] 밖으로 나갔을 때 호출되는 [[Event|이벤트]]입니다.

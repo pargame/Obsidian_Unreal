@@ -9,7 +9,7 @@
 * **[Event|이벤트 기반 시스템 (Event-Driven System):**
     게임 내 다른 시스템(예: 몬스터 사망, 아이템 획득)으로부터 "몬스터가 죽었다"와 같은 [Event|이벤트를 받습니다. 서브시스템은 이 [Event|이벤트를 듣고, 해당 [Event|이벤트와 관련된 업적의 조건을 확인하여 진행도를 업데이트하거나 업적을 해제합니다.
 * **UI 알림 및 연동 (UI Notification and Integration):**
-    새로운 업적이 달성되었을 때, `OnAchievementUnlocked`와 같은 델리게이트를 `Broadcast`하여, UI 시스템이 "업적 달성!"과 같은 팝업을 화면에 표시하도록 합니다.
+    새로운 업적이 달성되었을 때, `OnAchievementUnlocked`와 같은 [[Delegate]]를 `Broadcast`하여, UI 시스템이 "업적 달성!"과 같은 팝업을 화면에 표시하도록 합니다.
 
 ### **2. 구현 아이디어**
 > `UAchievementSubsystem`을 구현할 때 고려할 수 있는 주요 기능과 구조입니다.
@@ -22,9 +22,9 @@
 * **`ReportProgress(FName AchievementID, int32 ProgressAmount)`:**
     게임 내 다른 시스템에서 호출하는 함수입니다. 특정 업적 ID에 대해 진행도를 추가하고, 만약 진행도가 목표치를 달성하면 업적을 해제합니다.
 * **`UnlockAchievement(FName AchievementID)`:**
-    업적을 '해제됨' 상태로 변경하고, `OnAchievementUnlocked` 델리게이트를 호출하며, 변경된 상태를 저장 파일에 기록합니다.
-* **`OnAchievementUnlocked` (`FOnAchievementUnlocked` 델리게이트):**
-    새로운 업적이 해제될 때 호출되는 멀티캐스트 델리게이트입니다. UI 시스템이 이 델리게이트에 자신의 함수를 바인딩하여 알림을 받습니다.
+    업적을 '해제됨' 상태로 변경하고, `OnAchievementUnlocked` [[Delegate]]를 호출하며, 변경된 상태를 저장 파일에 기록합니다.
+* **`OnAchievementUnlocked` (`FOnAchievementUnlocked` [[Delegate]]):**
+    새로운 업적이 해제될 때 호출되는 멀티캐스트 [[Delegate]]입니다. UI 시스템이 이 [[Delegate]]에 자신의 함수를 바인딩하여 알림을 받습니다.
 
 ### **3. 사용 방법**
 1.  `UGameInstanceSubsystem`을 상속받는 `UAchievementSubsystem` C++ 클래스를 생성합니다.
