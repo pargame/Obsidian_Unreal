@@ -1,3 +1,4 @@
+
 > **언리얼 엔진의 모든 것을 구성하는 가장 근본적인 '원자(Atom)'입니다.** [[AActor]], [[UActorComponent]], 그리고 심지어 애셋 자체까지, 엔진 내에 존재하는 거의 모든 것은 `UObject`로부터 파생됩니다. `UObject`는 언리얼 엔진이 C++를 강력하게 확장하는 핵심적인 기반입니다.
 
 ### **1. 주요 역할 및 책임**
@@ -21,7 +22,7 @@
 * **[[UGameInstance]]:** 게임 세션 전체의 생명 주기를 관리하는 최상위 객체입니다.
 
 ### **3. `UObject` vs. `struct`**
-> 언제 `UObject`를 쓰고, 언제 일반 C++ `struct`(또는 `USTRUCT`)를 사용해야 할까요?
+> 언제 `UObject`를 쓰고, 언제 일반 C++ `struct`(`USTRUCT`)를 사용해야 할까요?
 * **`UObject`를 사용하는 경우:**
     가비지 컬렉션, 리플렉션, 블루프린트 연동 등 언리얼 엔진의 핵심 기능이 필요한 경우에 사용합니다. 독립적인 '객체'로서의 생명 주기를 가집니다.
 * **`struct` (`USTRUCT`)를 사용하는 경우:**
@@ -31,7 +32,7 @@
 > `UObject`는 `new` 키워드로 직접 생성하면 안 됩니다. 가비지 컬렉션 시스템이 추적할 수 없기 때문입니다.
 * **`NewObject<T>(Outer)`:**
     가장 일반적인 `UObject` 생성 방법입니다. `Outer` 인자는 이 `UObject`를 소유할 다른 `UObject`를 지정하며, `Outer`가 파괴될 때 함께 파괴됩니다.
-* **`CreateDefaultSubobject<T>(TEXT("..."))`:**
+* **`CreateDefaultSubobject<T>(TEXT("..."))`:
     클래스의 생성자(`Constructor`) 내에서 기본 서브오브젝트(주로 컴포넌트)를 생성할 때 사용합니다.
 
 ### **5. 주의사항**

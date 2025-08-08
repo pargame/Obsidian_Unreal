@@ -1,4 +1,3 @@
-
 > **레벨이 전환되어도 끊기지 않고 배경 음악(BGM)을 계속 재생하고, 게임의 상황에 따라 음악을 동적으로 변경하는 '음악 감독' 서브시스템입니다.** [[UGameInstanceSubsystem]]으로 구현하여, 게임 세션 전체에 걸쳐 음악의 연속성과 상태를 관리하는 역할을 합니다.
 
 ### **1. 주요 역할 및 책임**
@@ -18,7 +17,7 @@
     두 개의 [[UAudioComponent]]를 가집니다. 하나는 현재 재생 중인 음악을, 다른 하나는 다음에 재생될 음악을 페이드 인(Fade-in) 시키기 위해 사용됩니다. 이를 통해 두 음악 사이를 부드럽게 교차시킬 수 있습니다.
 * **`CurrentMusicData` (`UMusicDataAsset*`):**
     현재 재생 중인 음악의 정보를 담고 있는 데이터 애셋에 대한 참조입니다.
-* **`ChangeMusic(UMusicDataAsset* NewMusicData, float FadeDuration)`:**
+* **`ChangeMusic(UMusicDataAsset* NewMusicData, float FadeDuration)`:
     새로운 음악으로 전환하는 메인 함수입니다. 현재 재생 중인 오디오 컴포넌트는 페이드 아웃 시키고, 다른 오디오 컴포넌트로 새로운 음악을 페이드 인 시킵니다.
 * **`SetVolume(float Volume)`:**
     전체 배경 음악의 볼륨을 조절하는 함수입니다.
