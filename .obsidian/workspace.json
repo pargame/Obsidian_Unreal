@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AStaticMeshActor.md",
-                "mode": "source",
+                "file": "AController.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "AStaticMeshActor"
+              "title": "AController"
             }
           },
           {
@@ -203,8 +203,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4294ccb037e5b845",
+  "active": "f3149f6f43e59636",
   "lastOpenFiles": [
+    "APlayerStart.md",
+    "AGameModeBase.md",
     "AStaticMeshActor.md",
     "UAnimBlueprint.md",
     "UCharacterMovementComponent.md",
@@ -229,8 +231,6 @@
     "UMovementComponent.md",
     "UInputAction.md",
     "UGameViewportClient.md",
-    "Data Asset.md",
-    "UInputModifier.md",
-    "UInputTrigger.md"
+    "Data Asset.md"
   ]
 }
