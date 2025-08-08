@@ -83,6 +83,20 @@
               "icon": "lucide-bookmark",
               "title": "북마크"
             }
+          },
+          {
+            "id": "a3c59b14db85ec5b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "APlayerController.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "APlayerController"
+            }
           }
         ]
       }
@@ -189,7 +203,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f3149f6f43e59636",
+  "active": "4294ccb037e5b845",
   "lastOpenFiles": [
     "AStaticMeshActor.md",
     "UAnimBlueprint.md",
