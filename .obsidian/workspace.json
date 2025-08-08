@@ -13,25 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UEnhancedInputComponent.md",
+                "file": "UNavigationSystemV1.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "UEnhancedInputComponent"
+              "title": "UNavigationSystemV1"
             }
           },
           {
             "id": "f3149f6f43e59636",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "USlider.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "USlider"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -118,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "UEnhancedInputComponent.md",
+                "file": "USlider.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "UEnhancedInputComponent 의 백링크"
+              "title": "USlider 의 백링크"
             }
           },
           {
@@ -137,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "UEnhancedInputComponent.md",
+                "file": "USlider.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "UEnhancedInputComponent 의 나가는 링크"
+              "title": "USlider 의 나가는 링크"
             }
           },
           {
@@ -166,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "UEnhancedInputComponent.md",
+                "file": "USlider.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "UEnhancedInputComponent 의 개요"
+              "title": "USlider 의 개요"
             }
           },
           {
@@ -203,8 +208,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b5f3a8558f808e92",
+  "active": "f3149f6f43e59636",
   "lastOpenFiles": [
+    "USkeletalMesh.md",
+    "USphereComponent.md",
+    "UStaticMeshComponent.md",
+    "UTextBlock.md",
+    "UUserWidget.md",
+    "UStaticMesh.md",
+    "UNavigationSystemV1.md",
+    "UInputTrigger.md",
+    "UGridPanel.md",
+    "UGameInstanceSubsystem.md",
+    "UEnhancedInputComponent.md",
     "UDataAsset.md",
     "UAnimMontage.md",
     "UAnimBlueprint.md",
@@ -220,17 +236,6 @@
     "AStaticMeshActor.md",
     "APlayerState.md",
     "APlayerStart.md",
-    "APlayerController.md",
-    "APlayerCameraManager.md",
-    "APawn.md",
-    "ALight.md",
-    "AGameStateBase.md",
-    "AGameState.md",
-    "AGameModeBase.md",
-    "AGameMode.md",
-    "AController.md",
-    "ACharacter.md",
-    "ACameraActor.md",
     "무제.canvas"
   ]
 }

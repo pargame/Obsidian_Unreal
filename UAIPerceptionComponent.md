@@ -1,4 +1,3 @@
-
 > **AI가 월드를 '보고 듣고 느끼게' 해주는 감각 기관입니다.** 시각, 청각, 촉각 등 다양한 감각(Sense)을 통해 주변 환경의 자극(Stimulus)을 감지하고, 이를 [[AAIController]]에게 보고하여 AI가 상황을 인지하고 반응할 수 있도록 돕습니다.
 
 ### **1. 주요 역할 및 책임**
@@ -12,7 +11,7 @@
 
 ### **2. 핵심 개념 및 속성**
 * **`Senses Config`:**
-    이 컴포넌트가 사용할 감각의 종류와 각 감각의 세부 속성(예: 시야각, 시야 거리, 청각 범위 등)을 설정하는 배열입니다. `UAISenseConfig_Sight`, `UAISenseConfig_Hearing` 등의 에셋을 여기에 추가하여 AI의 감각을 디자인합니다.
+    이 컴포넌트가 사용할 감각의 종류와 각 감각의 세부 속성(예: 시야각, 시야 거리, 청각 범위 등)을 설정하는 배열입니다. [[UAISenseConfig_Sight]], [[UAISenseConfig_Hearing]] 등의 에셋을 여기에 추가하여 AI의 감각을 디자인합니다.
 * **`OnTargetPerceptionUpdated`:**
     가장 중요한 [[Event]]입니다. 감지된 액터와 자극에 대한 정보를 받아 AI의 행동 로직을 시작하는 지점입니다. 이 [[Event]]에 함수를 바인딩하여, 적을 발견했을 때의 처리(예: 블랙보드에 적 정보 저장)를 구현합니다.
 * **`Forgets stimulus`:**
@@ -27,7 +26,7 @@
 ### **4. 관련 클래스**
 * **[[AAIController]]:**
     `UAIPerceptionComponent`를 소유하고, 감지된 정보를 바탕으로 [[UBehaviorTree]]를 실행하는 등 실질적인 AI 로직을 총괄합니다.
-* **`UAISenseConfig`:**
-    개별 감각의 속성을 정의하는 설정 클래스의 부모 클래스입니다. (`UAISenseConfig_Sight`, `UAISenseConfig_Hearing` 등)
-* **`AIPerceptionStimuliSourceComponent`:**
+* **[[UAISenseConfig]]**: 
+    개별 감각의 속성을 정의하는 설정 클래스의 부모 클래스입니다. ([[UAISenseConfig_Sight]], [[UAISenseConfig_Hearing]] 등)
+* **[[AIPerceptionStimuliSourceComponent]]**: 
     이 컴포넌트를 가진 액터는 `UAIPerceptionComponent`에 의해 감지될 수 있는 '자극원'이 됩니다.
