@@ -1,4 +1,3 @@
-
 > **게임의 각종 설정(그래픽, 오디오, 게임플레이 등)을 관리하고, 이를 디스크에 저장하여 영구적으로 유지하는 '설정 관리자'입니다.** [[UGameInstanceSubsystem]]으로 구현하여, 게임 세션 전체에 걸쳐 사용자의 설정 값을 유지하고, 게임 내 어디서든 이 설정에 접근하고 수정할 수 있는 중앙 창구 역할을 합니다.
 
 ### **1. 주요 역할 및 책임**
@@ -26,7 +25,7 @@
     설정 값을 가져오고 변경하는 Getter/Setter 함수들입니다. Setter 함수 내부에서는 값을 변경한 후, `ApplySettings()`를 호출하고, 관련 [[Delegate]]를 `Broadcast`하는 로직이 포함됩니다.
 
 ### **3. 사용 방법**
-1.  모든 설정 변수를 담을 [[USaveGame]] C++ 클래스(예: `UMyGameSettingsSave`)를 생성합니다.
+1.  모든 설정 변수를 담을 [[USaveGame]] C++ 클래스(예: [[UMyGameSettingsSave]])를 생성합니다.
 2.  [[UGameInstanceSubsystem]]을 상속받는 `USettingsSubsystem` C++ 클래스를 생성합니다.
 3.  `Initialize`에서 `UMyGameSettingsSave` 객체를 로드하거나 새로 생성하고, `ApplySettings`를 호출하여 초기 설정을 적용합니다.
 4.  설정 UI 위젯에서는 이 서브시스템의 인스턴스를 가져와서, 현재 설정 값을 표시하고, 사용자가 슬라이더나 버튼을 조작하면 서브시스템의 Setter 함수(예: `SetMasterVolume`)를 호출합니다.
