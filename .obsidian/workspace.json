@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UAnimBlueprint.md",
+                "file": "UEnhancedInputComponent.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "UAnimBlueprint"
+              "title": "UEnhancedInputComponent"
             }
           },
           {
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "UAnimBlueprint.md",
+                "file": "UEnhancedInputComponent.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +128,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "UAnimBlueprint 의 백링크"
+              "title": "UEnhancedInputComponent 의 백링크"
             }
           },
           {
@@ -137,12 +137,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "UAnimBlueprint.md",
+                "file": "UEnhancedInputComponent.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "UAnimBlueprint 의 나가는 링크"
+              "title": "UEnhancedInputComponent 의 나가는 링크"
             }
           },
           {
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "UAnimBlueprint.md",
+                "file": "UEnhancedInputComponent.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "UAnimBlueprint 의 개요"
+              "title": "UEnhancedInputComponent 의 개요"
             }
           },
           {
@@ -205,6 +205,10 @@
   },
   "active": "b5f3a8558f808e92",
   "lastOpenFiles": [
+    "UDataAsset.md",
+    "UAnimMontage.md",
+    "UAnimBlueprint.md",
+    "UAnimInstance.md",
     "Online Subsystem.md",
     "FTransform.md",
     "FBodyInstance.md",
@@ -227,10 +231,6 @@
     "AController.md",
     "ACharacter.md",
     "ACameraActor.md",
-    "AAIController.md",
-    "AActor.md",
-    "UInputComponent.md",
-    "ULightComponent.md",
     "무제.canvas"
   ]
 }

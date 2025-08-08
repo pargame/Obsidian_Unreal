@@ -1,4 +1,3 @@
-
 > **세로로 긴 알약 모양(캡슐)의 형태를 가진, 보이지 않는 충돌 및 영역 감지용 컴포넌트입니다.** [[UPrimitiveComponent]]를 상속받아 렌더링과 충돌이 가능하지만, 주로 [[ACharacter]]의 기본 충돌체로 사용되거나 간단한 트리거 볼륨을 만드는 데 특화되어 있습니다.
 
 ### **1. 주요 역할 및 책임**
@@ -12,15 +11,15 @@
 
 ### **2. 핵심 함수 및 속성**
 > 캡슐의 크기를 조절하고 현재 상태를 가져오는 데 사용되는 주요 함수들입니다.
-* `SetCapsuleSize(float NewRadius, float NewHalfHeight, bool bUpdateOverlaps)`:
+* **`SetCapsuleSize(float NewRadius, float NewHalfHeight, bool bUpdateOverlaps)`:**
     캡슐의 반지름(Radius)과 절반 높이(Half Height)를 런타임에 변경합니다.
-* `SetCapsuleRadius(float NewRadius, bool bUpdateOverlaps)`:
+* **`SetCapsuleRadius(float NewRadius, bool bUpdateOverlaps)`:**
     캡슐의 반지름만 변경합니다.
-* `SetCapsuleHalfHeight(float NewHalfHeight, bool bUpdateOverlaps)`:
+* **`SetCapsuleHalfHeight(float NewHalfHeight, bool bUpdateOverlaps)`:**
     캡슐의 절반 높이만 변경합니다.
-* `GetScaledCapsuleRadius()`:
+* **`GetScaledCapsuleRadius()`:**
     컴포넌트의 스케일을 포함하여 계산된 최종 반지름을 반환합니다.
-* `GetScaledCapsuleHalfHeight()`:
+* **`GetScaledCapsuleHalfHeight()`:**
     컴포넌트의 스케일을 포함하여 계산된 최종 절반 높이를 반환합니다.
 
 ### **3. 주요 서브클래스**

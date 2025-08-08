@@ -15,17 +15,17 @@
 ### **2. 핵심 함수 및 변수**
 > `UAnimInstance`의 C++ 클래스 또는 [[UAnimBlueprint]]의 이벤트 그래프에서 주로 사용되는 핵심 요소들입니다.
 * `NativeInitializeAnimation()`:
-    애님 인스턴스가 처음 생성될 때 한 번 호출되는 C++ 초기화 함수입니다.
+    `UAnimInstance`가 처음 생성될 때 한 번 호출되는 C++ 초기화 함수입니다.
 * `NativeUpdateAnimation(float DeltaSeconds)`:
     매 프레임 호출되는 C++ 업데이트 함수입니다. 블루프린트의 `BlueprintUpdateAnimation` [[Event]]와 동일한 역할을 하며, 여기서 게임플레이 변수를 가져와 업데이트합니다.
 * `TryGetPawnOwner()`:
-    이 애님 인스턴스를 소유하고 있는 [[APawn]]에 대한 포인터를 안전하게 가져옵니다. 애니메이션에 필요한 데이터를 얻기 위해 가장 먼저 호출되는 함수 중 하나입니다.
+    이 `UAnimInstance`를 소유하고 있는 [[APawn]]에 대한 포인터를 안전하게 가져옵니다. 애니메이션에 필요한 데이터를 얻기 위해 가장 먼저 호출되는 함수 중 하나입니다.
 * `Montage_Play(UAnimMontage* MontageToPlay, ...)`:
     지정된 [[UAnimMontage]]를 재생합니다.
 * `Montage_Stop(float InBlendOutTime, const UAnimMontage* Montage)`:
     현재 재생 중인 몽타주를 중지시킵니다.
 * `Montage_IsPlaying(const UAnimMontage* Montage)`:
-    특정 몽타주가 현재 재생 중인지 확인합니다.
+    특정 [[UAnimMontage]]가 현재 재생 중인지 확인합니다.
 
 ### **3. `UAnimBlueprint`와의 관계**
 > 이 둘의 관계는 클래스와 인스턴스의 관계와 같습니다.

@@ -1,3 +1,4 @@
+
 > **[[ACharacter]]의 '다리'이자 '운동 신경계'입니다.** 걷고, 뛰고, 미끄러지고, 헤엄치는 등 인간형 [[ACharacter]]가 할 수 있는 거의 모든 종류의 이동을 물리적으로 시뮬레이션하고 네트워크상에서 동기화하는, 언리얼 엔진에서 가장 복잡하고 정교한 [[UActorComponent]] 중 하나입니다.
 
 ### **1. 주요 역할 및 책임**
@@ -11,32 +12,32 @@
 * **물리적 상호작용 (Physical Interaction):**
       움직이는 동안 다른 물리 오브젝트를 밀거나, 특정 표면 위에서 미끄러지는 등의 상호작용을 처리합니다.
 
-###  **2. 핵심 함수 및 속성**
+### **2. 핵심 함수 및 속성**
 > [[ACharacter]]의 이동 특성을 세밀하게 조정하고 현재 상태를 파악하는 데 사용되는 필수적인 변수와 함수들입니다.
-* `MaxWalkSpeed`:
+* **`MaxWalkSpeed`:**
 	`Walking` 모드일 때의 최대 속도를 결정합니다.
-* `JumpZVelocity`:
+* **`JumpZVelocity`:**
       `Jump()`가 호출될 때 위쪽으로 가해지는 순간적인 속도의 크기입니다. 점프 높이를 결정합니다.
-* `GravityScale`:
+* **`GravityScale`:**
       [[ACharacter]]에 적용되는 중력의 배율을 조절합니다.
-* `AirControl`:
+* **`AirControl`:**
 	공중에 떠 있는(`Falling`) 상태일 때, [[ACharacter]]의 방향을 얼마나 제어할 수 있는지를 나타내는 값입니다. (`0.0` ~ `1.0`)
-* `SetMovementMode(EMovementMode NewMovementMode)`:
+* **`SetMovementMode(EMovementMode NewMovementMode)`:
 	[[ACharacter]]의 이동 모드를 강제로 변경합니다. (예: 특정 볼륨에 들어가면 `Swimming` 모드로 전환)
-* `IsFalling()`:
+* **`IsFalling()`:**
       현재 [[ACharacter]]가 공중에 떠 있는지(지면에 닿아있지 않은지) 여부를 반환합니다.
-* `MovementMode`:
+* **`MovementMode`:**
       현재 [[ACharacter]]의 이동 상태를 나타내는 열거형(`enum`) 변수입니다. [[UAnimBlueprint]] 등에서 이 값을 확인하여 상태에 맞는 애니메이션을 재생하는 데 핵심적으로 사용됩니다.
 
 ### **3. 이동 모드 (Movement Modes)**
 > `UCharacterMovementComponent`의 상태를 정의하는 핵심적인 열거형 값들입니다.
-* `MOVE_Walking`: 
+* **`MOVE_Walking`:** 
       지면에 붙어서 이동하는 기본 상태입니다.
-* `MOVE_Falling`:
+* **`MOVE_Falling`:**
 	공중에 떠서 중력의 영향을 받는 상태입니다. 점프나 낙하 시에 해당됩니다.
-* `MOVE_Swimming`:
+* **`MOVE_Swimming`:**
       [[PhysicsVolume]]이 물로 설정된 공간 안에서 헤엄치는 상태입니다.
-* `MOVE_Flying`:
+* **`MOVE_Flying`:**
 	중력의 영향을 받지 않고 자유롭게 비행하는 상태입니다. (예: noclip 치트)
-* `MOVE_Custom`:
+* **`MOVE_Custom`:**
 	개발자가 직접 정의한 커스텀 이동 로직을 사용할 때 설정하는 상태입니다. (예: 벽 타기, 그래플링 훅)
