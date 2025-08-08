@@ -18,7 +18,7 @@
 * `StartCameraFade(float FromAlpha, float ToAlpha, float Duration, FLinearColor Color, ...)`:
     지정된 시간 동안 화면을 특정 색상으로 어둡게 만들거나(페이드 아웃), 다시 밝게(페이드 인) 만듭니다.
 * `PlayCameraShake(TSubclassOf<UCameraShakeBase> ShakeClass, ...)`:
-    지정된 [[UCameraShake]] 애셋을 재생하여 화면을 흔듭니다. (예: 폭발, 피격)
+    지정된 [[UCameraShake]] 에셋을 재생하여 화면을 흔듭니다. (예: 폭발, 피격)
 * `GetCameraLocation()` / `GetCameraRotation()`:
     현재 프레임에서 최종적으로 계산된 카메라의 월드 위치와 회전 값을 반환합니다.
 

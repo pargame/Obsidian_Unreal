@@ -14,7 +14,7 @@
 ### **2. 핵심 함수 및 속성**
 > AI의 행동을 제어하고 상태를 관리하는 데 사용되는 핵심적인 함수와 변수들입니다.
 * `RunBehaviorTree(UBehaviorTree* BTAsset)`:
-    지정된 비헤이비어 트리 애셋을 실행하여 AI의 의사 결정 로직을 시작합니다.
+    지정된 비헤이비어 트리 에셋을 실행하여 AI의 의사 결정 로직을 시작합니다.
 * `MoveToActor(AActor* Goal, ...)` / `MoveToLocation(const FVector& Dest, ...)`:
     내비게이션 시스템을 사용하여 목표 액터나 위치로 [[APawn]]을 이동시키도록 명령합니다.
 * `GetBlackboardComponent()`:

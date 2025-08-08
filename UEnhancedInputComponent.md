@@ -3,7 +3,7 @@
 ### **1. 주요 역할 및 책임**
 > `UEnhancedInputComponent`는 [[APawn]]이나 [[APlayerController]]에 추가되어, [[Enhanced Input System]]의 [[Event|이벤트]]와 실제 게임플레이 로직을 연결하는 다리 역할을 합니다.
 * **액션과 함수의 바인딩 (Binding Actions to Functions):**
-      `BindAction()` 함수를 통해, 특정 [[UInputAction]] 애셋이 특정 [[ETriggerEvent]](예: `Triggered`, `Started`, `Completed`) 상태가 되었을 때, 어떤 객체의 어떤 함수를 호출할지를 명확하게 지정합니다.
+      `BindAction()` 함수를 통해, 특정 [[UInputAction]] 에셋이 특정 [[ETriggerEvent]](예: `Triggered`, `Started`, `Completed`) 상태가 되었을 때, 어떤 객체의 어떤 함수를 호출할지를 명확하게 지정합니다.
 * **입력 처리의 종착점 (Destination of Input Processing):**
       [[UEnhancedInputLocalPlayerSubsystem]]이 플레이어의 입력을 받아 [[UInputMappingContext]]와 [[UInputTrigger]]를 거쳐 최종적으로 [[UInputAction]]을 발동시키면, 그 결과가 이 컴포넌트에 도달하여 바인딩된 함수를 실행시킵니다.
 * **입력 값 전달 (Passing Input Values):**
@@ -14,7 +14,7 @@
 * `BindAction(const UInputAction* Action, ETriggerEvent TriggerEvent, UObject* Object, FName FunctionName, ...)`:
 	지정된 [[UInputAction]]과 C++ 함수를 바인딩하는 핵심 함수입니다.
 	* `Action`:
-	바인딩할 [[UInputAction]] 애셋을 지정합니다.
+	바인딩할 [[UInputAction]] 에셋을 지정합니다.
 	* `TriggerEvent`:
 	함수가 호출될 [[ETriggerEvent]]의 종류를 지정합니다. (`Triggered`가 가장 일반적으로 사용됩니다.)
 	* `Object`: 

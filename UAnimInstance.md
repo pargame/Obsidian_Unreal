@@ -1,4 +1,4 @@
-> **[[UAnimBlueprint]]라는 '설계도'를 바탕으로, 게임 월드에서 실제로 살아 움직이며 애니메이션을 실행하는 '인스턴스'이자 '일꾼'입니다.** `UAnimBlueprint`가 에디터에서 편집하는 애셋이라면, `UAnimInstance`는 게임이 실행될 때 [[USkeletalMeshComponent]] 내에서 생성되어 매 프레임마다 애니메이션 로직을 업데이트하는 실제 C++ 객체입니다.
+> **[[UAnimBlueprint]]라는 '설계도'를 바탕으로, 게임 월드에서 실제로 살아 움직이며 애니메이션을 실행하는 '인스턴스'이자 '일꾼'입니다.** `UAnimBlueprint`가 에디터에서 편집하는 에셋이라면, `UAnimInstance`는 게임이 실행될 때 [[USkeletalMeshComponent]] 내에서 생성되어 매 프레임마다 애니메이션 로직을 업데이트하는 실제 C++ 객체입니다.
 
 ### **1. 주요 역할 및 책임**
 > `UAnimInstance`는 게임플레이 세계와 애니메이션 시스템 사이의 실질적인 데이터 통로 역할을 합니다.
@@ -29,7 +29,7 @@
 ### **3. `UAnimBlueprint`와의 관계**
 > 이 둘의 관계는 클래스와 인스턴스의 관계와 같습니다.
 * **[[UAnimBlueprint]] (클래스/설계도):**
-    개발자가 에디터에서 편집하는 애셋입니다. 컴파일하면 내부적으로 `UAnimInstance`를 상속받는 새로운 C++ 클래스가 생성됩니다.
+    개발자가 에디터에서 편집하는 에셋입니다. 컴파일하면 내부적으로 `UAnimInstance`를 상속받는 새로운 C++ 클래스가 생성됩니다.
 * **`UAnimInstance` (객체/인스턴스):**
     게임이 실행될 때, [[USkeletalMeshComponent]]는 [[UAnimBlueprint]]가 정의한 `UAnimInstance` 클래스의 인스턴스를 생성하여 메모리에 올립니다. 모든 애니메이션 계산은 이 인스턴스 객체에서 일어납니다.
 

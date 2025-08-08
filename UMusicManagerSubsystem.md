@@ -9,14 +9,14 @@
 * **중앙 집중식 제어 (Centralized Control):**
     음악 볼륨, 재생/정지 등 모든 음악 관련 제어를 이 서브시스템을 통해 처리하도록 하여, 코드의 중복을 막고 유지보수를 용이하게 합니다.
 * **데이터 기반 관리 (Data-Driven Management):**
-    실제 `USoundBase` 애셋을 직접 참조하는 대신, 볼륨, 페이드 시간 등의 메타데이터를 포함하는 `UMusicDataAsset`과 같은 [[Data Asset]]을 사용하여 음악을 관리함으로써 유연성을 높입니다.
+    실제 `USoundBase` 에셋을 직접 참조하는 대신, 볼륨, 페이드 시간 등의 메타데이터를 포함하는 `UMusicDataAsset`과 같은 [[Data Asset]]을 사용하여 음악을 관리함으로써 유연성을 높입니다.
 
 ### **2. 구현 아이디어**
 > `UMusicManagerSubsystem`을 구현할 때 고려할 수 있는 주요 기능과 변수들입니다.
 * **`Audio Components`:**
     두 개의 [[UAudioComponent]]를 가집니다. 하나는 현재 재생 중인 음악을, 다른 하나는 다음에 재생될 음악을 페이드 인(Fade-in) 시키기 위해 사용됩니다. 이를 통해 두 음악 사이를 부드럽게 교차시킬 수 있습니다.
 * **`CurrentMusicData` (`UMusicDataAsset*`):**
-    현재 재생 중인 음악의 정보를 담고 있는 데이터 애셋에 대한 참조입니다.
+    현재 재생 중인 음악의 정보를 담고 있는 데이터 에셋에 대한 참조입니다.
 * **`ChangeMusic(UMusicDataAsset* NewMusicData, float FadeDuration)`:**
     새로운 음악으로 전환하는 메인 함수입니다. 현재 재생 중인 오디오 컴포넌트는 페이드 아웃 시키고, 다른 오디오 컴포넌트로 새로운 음악을 페이드 인 시킵니다.
 * **`SetVolume(float Volume)`:**
