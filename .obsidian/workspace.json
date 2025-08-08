@@ -25,14 +25,10 @@
             "id": "f3149f6f43e59636",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PlayerCameraManager.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "PlayerCameraManager"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
             }
           }
         ],
@@ -123,7 +119,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PlayerCameraManager.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +128,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "PlayerCameraManager 의 백링크"
+              "title": "백링크"
             }
           },
           {
@@ -142,12 +137,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PlayerCameraManager.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "PlayerCameraManager 의 나가는 링크"
+              "title": "나가는 링크"
             }
           },
           {
@@ -171,13 +165,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PlayerCameraManager.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "PlayerCameraManager 의 개요"
+              "title": "개요"
             }
           },
           {
@@ -208,8 +201,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2797f2166360308c",
+  "active": "f3149f6f43e59636",
   "lastOpenFiles": [
+    "AActor.md",
+    "PlayerCameraManager.md",
     "Subsystem.md",
     "Event.md",
     "UPanelWidget.md",
@@ -234,8 +229,6 @@
     "UInputAction.md",
     "UEnhancedInputComponent.md",
     "UEngineSubsystem.md",
-    "UDataAsset.md",
-    "UCameraShake.md",
     "무제.canvas"
   ]
 }
