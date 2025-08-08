@@ -1,3 +1,4 @@
+
 > **게임의 규칙과 흐름을 총괄하는 보이지 않는 지휘자입니다.** 서버에만 존재하며, 플레이어의 접속부터 스폰, 게임의 시작과 종료까지 모든 것을 관장합니다. 클라이언트는 이 복잡한 규칙을 알 필요 없이, 오직 서버의 안내에 따라 월드에 참여하고 상호작용합니다. 즉, 게임의 '뇌'와 같은 역할을 수행합니다.
  
 ### **1. 클래스 기본값 설정**
@@ -31,7 +32,7 @@
 	결정된 위치(StartSpot)에 결정된 클래스(`GetDefaultPawnClassForController`의 반환값)의 폰을 스폰합니다.
 * `Possess(APawn* InPawn)`: `NewPlayer` 컨트롤러의 이 함수를 호출하여, 방금 스폰된 폰에 대한 제어권을 부여합니다.
 * `K2_OnSetMatchState(FName NewState)`:
-	게임의 매치 상태(MatchState)가 변경될 때 호출되는 블루프린트 [[Event|이벤트]]입니다. `WaitingToStart`, `InProgress`, `WaitingPostMatch` 등의 상태에 따라 특정 로직(예: `InProgress` 상태가 되면 모든 플레이어의 `RestartPlayer` 호출)을 실행하는 데 사용됩니다.
+	게임의 매치 상태(MatchState)가 변경될 때 호출되는 블루프린트 [[Event]]입니다. `WaitingToStart`, `InProgress`, `WaitingPostMatch` 등의 상태에 따라 특정 로직(예: `InProgress` 상태가 되면 모든 플레이어의 `RestartPlayer` 호출)을 실행하는 데 사용됩니다.
 
 ### **4. 게임 흐름 및 규칙 관리 (Game Flow & Rule Management)**
 > 게임의 시작, 종료, 승패 조건 등 핵심 규칙을 처리합니다. 게임의 전체적인 맥박과 생명주기를 관장하는 심장과도 같은 역할을 합니다.

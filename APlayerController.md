@@ -1,8 +1,7 @@
-
 > **게임 세계와 실제 플레이어를 연결하는 '신경계'이자, 플레이어의 의지를 [[APawn]]에 전달하는 대리인입니다.** 키보드, 마우스, 게임패드로부터 입력을 받아 처리하고, 화면에 UI(HUD)를 그리며, 서버와 통신하는 등 플레이어와 관련된 모든 상호작용을 총괄합니다.
 
 ### **1. 주요 역할 및 책임**
-> [[AController]]의 자식 클래스로서, AI가 아닌 실제 인간 플레이어를 위해 특화된 모든 기능을 담당합니다.
+> `APlayerController`는 [[AController]]의 자식 클래스로서, AI가 아닌 실제 인간 플레이어를 위해 특화된 모든 기능을 담당합니다.
 * **입력 처리 및 변환 (Input Processing and Conversion):**
       [[UEnhancedInputLocalPlayerSubsystem]]과 같은 시스템을 통해 하드웨어 입력을 받아, 이를 '이동', '점프', '공격'과 같은 게임 내 행동으로 변환하고, 제어 중인 [[APawn]]에게 명령을 내립니다.
 * **HUD 및 UI 관리 (HUD and UI Management):**
@@ -27,7 +26,7 @@
 * `ServerSetViewTarget(AActor* NewViewTarget)`:
       서버에 요청하여 이 `APlayerController`의 시점을 특정 [[AActor]]로 고정합니다. (예: 관전 모드)
 
-### **3. APlayerController와 Pawn의 관계**
+### **3. `APlayerController`와 `APawn`의 관계**
 > `APlayerController`와 [[APawn]]은 '정신'과 '육체'의 관계로 비유할 수 있습니다.
 * **분리된 존재:**
       `APlayerController`는 [[APawn]]이 죽거나 교체되어도 파괴되지 않고 계속 존재할 수 있습니다. 리스폰 시, 동일한 `APlayerController`가 새로운 [[APawn]]에 `Possess`하여 게임을 이어갑니다.

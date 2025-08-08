@@ -1,3 +1,4 @@
+
 > **세로로 긴 알약 모양(캡슐)의 형태를 가진, 보이지 않는 충돌 및 영역 감지용 컴포넌트입니다.** [[UPrimitiveComponent]]를 상속받아 렌더링과 충돌이 가능하지만, 주로 [[ACharacter]]의 기본 충돌체로 사용되거나 간단한 트리거 볼륨을 만드는 데 특화되어 있습니다.
 
 ### **1. 주요 역할 및 책임**
@@ -27,7 +28,7 @@
 * **[[UBoxComponent]]:** 사각 박스 형태의 충돌 컴포넌트입니다.
 * **[[USphereComponent]]:** 구 형태의 충돌 컴포넌트입니다.
 
-이들은 모두 [[UPrimitiveComponent]]를 상속받으므로, `OnComponentBeginOverlap`, `OnComponentHit`과 같은 충돌 [[Event]]를 동일하게 사용할 수 있습니다.
+이들은 모두 [[UPrimitiveComponent]]를 상속받으므로, `OnComponentBeginOverlap`, `OnComponentEndOverlap`, `OnComponentHit`과 같은 충돌 [[Event]]를 동일하게 사용할 수 있습니다.
 
 ### **4. 사용 예시**
 * **캐릭터:** [[ACharacter]]의 루트 컴포넌트로 사용하여, 월드와의 주된 상호작용(걷기, 부딪히기)을 처리합니다.

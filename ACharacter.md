@@ -1,4 +1,3 @@
-
 > **월드를 두 발로 누비는 '배우'입니다.** 걷고, 뛰고, 점프하는 등 인간형 `ACharacter`에 필요한 모든 기본 움직임을 내장하고 있어, 복잡한 이동 로직을 직접 구현할 필요 없이 바로 생명력을 불어넣을 수 있습니다.
 
 ### **1. 주요 역할 및 책임**
@@ -23,7 +22,7 @@
 * `LaunchCharacter(FVector LaunchVelocity, ...)`:
 	`ACharacter`에게 특정 방향으로 물리적인 힘을 가해 날려 보냅니다. (예: 폭발, 넉백)
 * `OnMovementModeChanged(EMovementMode PrevMovementMode, ...)`:
-	이동 모드(걷기, 수영, 비행 등)가 변경될 때 호출되는 [[Event|이벤트]]입니다.
+	이동 모드(걷기, 수영, 비행 등)가 변경될 때 호출되는 [[Event]]입니다.
 * `IsMovingOnGround()`:
 	`ACharacter`가 현재 지면에 붙어 있는지 확인합니다.
 * `GetBaseAimRotation()`:
@@ -34,6 +33,6 @@
 * **[[UCapsuleComponent]] (루트 컴포넌트):**
 	`ACharacter`의 충돌 경계를 정의합니다. 캡슐 모양은 수직으로 서 있는 인간형 `ACharacter`의 충돌 및 이동 계산에 매우 효율적입니다.
 * **[[USkeletalMeshComponent]]:**
-	`ACharacter`의 시각적 외형과 애니메이션을 담당합니다. 뼈대(`Skeleton`)를 가지고 있어 복잡한 움직임을 표현할 수 있습니다.
+	`ACharacter`의 시각적 외형과 애니메이션을 담당합니다. 뼈대([[USkeleton]])를 가지고 있어 복잡한 움직임을 표현할 수 있습니다.
 * **[[UCharacterMovementComponent]]:**
 	`ACharacter`의 '다리'와도 같습니다. 중력의 영향을 받고, 지면을 따라 걷거나, 경사면을 오르고, 점프하는 등 모든 이동 로직을 처리하는 가장 복잡하고 중요한 컴포넌트입니다.

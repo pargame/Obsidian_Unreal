@@ -1,3 +1,4 @@
+
 > **플레이어의 도전 과제(Achievement) 달성 상태를 추적, 관리하고, 영구적으로 저장하는 '업적 관리자'입니다.** [[UGameInstanceSubsystem]]으로 구현하여, 게임 세션 전체에 걸쳐 플레이어의 업적 데이터를 유지하고, 특정 조건이 충족되었을 때 업적 달성 [[Event]]를 발생시키는 역할을 합니다.
 
 ### **1. 주요 역할 및 책임**
@@ -14,7 +15,7 @@
 ### **2. 구현 아이디어**
 > `UAchievementSubsystem`을 구현할 때 고려할 수 있는 주요 기능과 구조입니다.
 * **`AchievementData` (`TMap<FName, FAchievementStatus>`):**
-    업적의 고유 ID(`FName`)를 키로, 업적의 상태(잠김/해제, 현재 진행도)를 담는 구조체(`FAchievementStatus`)를 값으로 가지는 맵(Map) 변수입니다.
+    업적의 고유 ID(`FName`)를 키로, 업적의 상태(잠김/해제, 현재 진행도)를 담는 구조체([[FAchievementStatus]])를 값으로 가지는 맵(Map) 변수입니다.
 * **`Initialize()`:**
     서브시스템이 초기화될 때, [[USaveGame]] 파일로부터 이전에 저장된 업적 데이터를 불러와 `AchievementData` 맵을 채웁니다.
 * **`Deinitialize()`:**
