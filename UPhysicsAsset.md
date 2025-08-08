@@ -19,7 +19,7 @@
     두 물리 바디 사이의 연결을 정의합니다. 실제 관절처럼, 특정 축으로만 회전하거나 움직임의 범위를 제한하는 역할을 합니다. (예: 팔꿈치는 한 방향으로만 접히도록 설정)
 
 ### **3. 사용 흐름**
-1. **`UPhysicsAsset` 생성:** [[USkeletalMesh]] 에셋을 우클릭하여 `생성 > Physics Asset`을 선택하고, 자동 생성 옵션을 통해 기본적인 물리 바디와 제약을 만듭니다.
+1. **`UPhysicsAsset` 생성:** [[USkeletalMesh]] 애셋을 우클릭하여 `생성 > Physics Asset`을 선택하고, 자동 생성 옵션을 통해 기본적인 물리 바디와 제약을 만듭니다.
 2. **에디터에서 편집:** 생성된 `UPhysicsAsset`을 열어, 각 뼈에 할당된 물리 바디의 크기와 위치를 조정하고, 관절의 움직임 범위를 제약으로 설정하여 원하는 래그돌 동작을 만듭니다.
 3. **[[USkeletalMeshComponent]]에 할당:** 캐릭터의 [[USkeletalMeshComponent]] 디테일 패널에서, `Physics > Physics Asset` 속성에 방금 만든 `UPhysicsAsset`을 할당합니다.
 4. **활성화:** 코드나 블루프린트에서 [[USkeletalMeshComponent]]의 `SetSimulatePhysics(true)`를 호출하면, 애니메이션이 중단되고 `UPhysicsAsset`에 정의된 대로 물리 시뮬레이션이 시작됩니다.

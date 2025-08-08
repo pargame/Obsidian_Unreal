@@ -25,4 +25,4 @@
       다른 [[UInputAction|IA]]가 활성화되어 있는 상태에서 이 키를 눌러야만 `Triggered` 상태가 됩니다. (예: `Shift` 키를 누른 상태에서 클릭)
 
 ### **3. 사용 방법**
-> `UInputTrigger`는 [[UInputMappingContext|IMC]] 에셋 안에서, 특정 키 매핑의 Triggers 배열에 추가하여 사용합니다. 개발자는 원하는 트리거를 선택하고, 필요에 따라 세부 속성(예: `Hold Time`)을 조정하기만 하면 됩니다. 별도의 코딩 없이도 복잡한 입력 패턴을 쉽게 구현할 수 있습니다.
+> `UInputTrigger`는 [[UInputMappingContext|IMC]] 애셋 안에서, 특정 키 매핑의 Triggers 배열에 추가하여 사용합니다. 개발자는 원하는 트리거를 선택하고, 필요에 따라 세부 속성(예: `Hold Time`)을 조정하기만 하면 됩니다. 별도의 코딩 없이도 복잡한 입력 패턴을 쉽게 구현할 수 있습니다.

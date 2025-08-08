@@ -5,7 +5,7 @@
 * **단일 동작 표현 (Representing a Single Action):**
     애니메이션의 가장 작은 단위인 하나의 동작을 표현합니다. 모든 복잡한 애니메이션 로직은 이 `UAnimSequence`들을 조합하는 것에서부터 시작됩니다.
 * **애니메이션 데이터의 원천 (Source of Animation Data):**
-    [[UAnimMontage]]나 `Blend Space`와 같은 더 복잡한 애니메이션 에셋들은 모두 이 `UAnimSequence`들을 재료로 사용하여 만들어집니다.
+    [[UAnimMontage]]나 `Blend Space`와 같은 더 복잡한 애니메이션 애셋들은 모두 이 `UAnimSequence`들을 재료로 사용하여 만들어집니다.
 * **노티파이(Notify)와 커브(Curve) 데이터 포함:**
     애니메이션 재생 중 특정 시점에 [[Event|이벤트]]를 발생시키는 '노티파이'(예: 발소리 재생, 공격 판정 활성화)나, 시간에 따라 변하는 부가 데이터('커브')를 포함할 수 있습니다.
 

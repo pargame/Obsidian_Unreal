@@ -25,14 +25,10 @@
             "id": "b5f3a8558f808e92",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "UMusicManagerSubsystem.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "UMusicManagerSubsystem"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
             }
           }
         ],
@@ -68,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "애셋",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,8 +99,7 @@
               "title": "APlayerController"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -124,7 +119,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "UMusicManagerSubsystem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +128,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "UMusicManagerSubsystem 의 백링크"
+              "title": "백링크"
             }
           },
           {
@@ -143,12 +137,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "UMusicManagerSubsystem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "UMusicManagerSubsystem 의 나가는 링크"
+              "title": "나가는 링크"
             }
           },
           {
@@ -172,13 +165,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "UMusicManagerSubsystem.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "UMusicManagerSubsystem 의 개요"
+              "title": "개요"
             }
           },
           {
@@ -196,7 +188,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,32 +203,32 @@
   },
   "active": "b5f3a8558f808e92",
   "lastOpenFiles": [
-    "UEngineSubsystem.md",
+    "UnrealMotionGraphics.md",
+    "UAIPerceptionComponent.md",
+    "UGameplayStatics.md",
+    "Online Subsystem.md",
+    "USoundBase.md",
+    "UBlackboardComponent.md",
+    "UPhysicsAsset.md",
+    "UPrimaryDataAsset.md",
+    "UObject.md",
+    "UInputTrigger.md",
+    "UInputModifier.md",
+    "UInputMappingContext.md",
+    "UInputAction.md",
     "UEnhancedInputComponent.md",
+    "UEngineSubsystem.md",
     "UDataAsset.md",
     "UCameraShake.md",
+    "UAudioComponent.md",
+    "UAnimSequence.md",
+    "UAnimMontage.md",
     "UAnimInstance.md",
     "UAnimBlueprint.md",
-    "APlayerCameraManager.md",
-    "AAIController.md",
-    "USkeletalMeshComponent.md",
-    "ACharacter.md",
-    "UAudioComponent.md",
-    "ALight.md",
-    "USaveGameSubsystem.md",
-    "AGameState.md",
-    "UFloatingPawnMovement.md",
-    "USphereComponent.md",
-    "USaveGame.md",
-    "AController.md",
-    "[Event.md",
-    "Delegate.md",
-    "AActor.md",
-    "UWorldSubsystem.md",
-    "UWorld.md",
-    "UStaticMeshComponent.md",
-    "UStaticMesh.md",
-    "USkeleton.md",
+    "UAnimationAsset.md",
+    "Enhanced Input System.md",
+    "Data Asset.md",
+    "AStaticMeshActor.md",
     "무제.canvas"
   ]
 }
