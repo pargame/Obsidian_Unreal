@@ -1,4 +1,3 @@
-
 > `AGameMode`는 [[AGameModeBase]]를 상속받아, '데스매치'나 '깃발 뺏기'와 같이 명확한 시작, 진행, 종료 상태를 가지는 전통적인 멀티플레이어 게임을 위해 설계된 클래스입니다. [[AGameModeBase]]의 모든 기능 위에, **매치 상태 머신(Match State Machine)**과 관련된 추가적인 규칙 및 흐름 제어 기능을 제공합니다.
 
 ### **1. 매치 상태 관리 (Match State Management)**
@@ -6,7 +5,7 @@
 * `MatchState`: 
 	현재 게임의 상태를 나타내는 `FName` 변수입니다. (`WaitingToStart`, `InProgress`, `WaitingPostMatch` 등의 값을 가집니다.)
 * `SetMatchState(FName NewState)`:
-	게임의 MatchState를 지정된 상태로 변경합니다. 상태 변경 시 `OnMatchStateSet` [[Event|이벤트]]가 호출됩니다.
+	게임의 MatchState를 지정된 상태로 변경합니다. 상태 변경 시 `OnMatchStateSet` [[Event]]가 호출됩니다.
 * `StartMatch()`:
 	`MatchState`를 `InProgress`로 설정하여 게임의 주요 로직이 시작되도록 합니다.
 * `EndMatch()`:

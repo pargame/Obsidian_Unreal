@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Subsystem.md",
+                "file": "PlayerCameraManager.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Subsystem"
+              "title": "PlayerCameraManager"
             }
           }
         ],
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Subsystem.md",
+                "file": "PlayerCameraManager.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Subsystem 의 백링크"
+              "title": "PlayerCameraManager 의 백링크"
             }
           },
           {
@@ -142,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Subsystem.md",
+                "file": "PlayerCameraManager.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Subsystem 의 나가는 링크"
+              "title": "PlayerCameraManager 의 나가는 링크"
             }
           },
           {
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Subsystem.md",
+                "file": "PlayerCameraManager.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Subsystem 의 개요"
+              "title": "PlayerCameraManager 의 개요"
             }
           },
           {
@@ -191,7 +191,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -208,8 +208,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f3149f6f43e59636",
+  "active": "2797f2166360308c",
   "lastOpenFiles": [
+    "Subsystem.md",
     "Event.md",
     "UPanelWidget.md",
     "Data Asset.md",
@@ -235,7 +236,6 @@
     "UEngineSubsystem.md",
     "UDataAsset.md",
     "UCameraShake.md",
-    "UAudioComponent.md",
     "무제.canvas"
   ]
 }

@@ -1,4 +1,3 @@
-
 > **언리얼 엔진의 기능을 체계적으로 모듈화하고, 특정 생명 주기에 맞춰 자동으로 관리되는 '서비스 관리자'입니다.** `Subsystem`은 복잡한 기능에 대한 접근점을 단일화하고, 개발자가 직접 객체를 생성하거나 소멸시킬 필요 없이 엔진의 흐름에 따라 자동으로 관리되는 편리함을 제공합니다.
 
 ### **1. 주요 역할 및 책임**
@@ -25,11 +24,11 @@
 > `Subsystem`을 사용하는 방법은 타입에 관계없이 매우 일관되고 간단합니다.
 ```cpp
 // 게임 인스턴스 서브시스템 가져오기
-[[UGameInstanceSubsystem]]* MyGameSubsystem = GetGameInstance()->GetSubsystem<UMyGameInstanceSubsystem>();
+UMyGameSubsystem* MyGameSubsystem = GetGameInstance()->GetSubsystem<UMyGameInstanceSubsystem>();
 
 // 월드 서브시스템 가져오기
-[[UWorldSubsystem]]* MyWorldSubsystem = GetWorld()->GetSubsystem<AMyWorldSubsystem>();
+AMyWorldSubsystem* MyWorldSubsystem = GetWorld()->GetSubsystem<AMyWorldSubsystem>();
 
 // 로컬 플레이어 서브시스템 가져오기
-[[ULocalPlayerSubsystem]]* MyInputSubsystem = ULocalPlayer::GetSubsystem<UMyInputSubsystem>(PlayerController->GetLocalPlayer());
+UMyInputSubsystem* MyInputSubsystem = ULocalPlayer::GetSubsystem<UMyInputSubsystem>(PlayerController->GetLocalPlayer());
 ```
