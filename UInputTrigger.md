@@ -2,19 +2,12 @@
 
 ### **1. 주요 역할 및 책임**
 > `UInputTrigger`는 원시 입력(Raw Input)과 [[UInputAction|액션]]의 발동 사이에서, 시간과 입력 상태를 분석하여 발동 시점을 결정하는 필터 역할을 합니다.
-* **발동 조건 정의 (Defining Firing Conditions):**
-      입력이 어떤 상태에 도달했을 때 [[UInputAction|IA(액션)]]의 `Triggered` 이벤트를 발생시킬지 결정합니다. 예를 들어, `Pressed` 트리거는 키가 눌리는 바로 그 순간에, `Held` 트리거는 일정 시간 이상 키를 누르고 있을 때 발동합니다.
->[!입력 상태 관리 (Managing Input States)]
->>트리거는 내부적으로 입력의 여러 상태(`Ongoing`, `Triggered`, `Completed`)를 관리합니다.
->* **`Ongoing`:**
-트리거의 조건이 충족되는 과정에 있는 상태입니다. (예: `Hold` 트리거의 경우, 키를 누르고 있는 동안)
->* **`Triggered`:**
-트리거의 조건이 완전히 충족되어 액션을 발동시키는 상태입니다. 이 상태에서 바인딩된 함수가 호출됩니다.
->* **`Completed`:** 
-액션이 완료된 상태입니다. (예: `Hold` 트리거의 경우, 키에서 손을 뗐을 때)
-
-* **조합을 통한 복잡한 패턴 구현 (Implementing Complex Patterns through Combination):**
-	하나의 매핑에 여러 `UInputTrigger`를 조합하여 더 복잡한 입력 로직을 만들 수 있습니다. 예를 들어, `Tap`과 `Hold`를 함께 사용하여 짧게 누르면 '구르기', 길게 누르면 '달리기'가 되도록 구현할 수 있습니다.
+* **발동 조건 정의 (Defining Firing Conditions):** 입력이 어떤 상태에 도달했을 때 [[UInputAction|IA(액션)]]의 `Triggered` 이벤트를 발생시킬지 결정합니다. 예를 들어, `Pressed` 트리거는 키가 눌리는 바로 그 순간에, `Held` 트리거는 일정 시간 이상 키를 누르고 있을 때 발동합니다.
+* **입력 상태 관리 (Managing Input States):** 트리거는 내부적으로 입력의 여러 상태(`Ongoing`, `Triggered`, `Completed`)를 관리합니다.
+    * **`Ongoing`:** 트리거의 조건이 충족되는 과정에 있는 상태입니다. (예: `Hold` 트리거의 경우, 키를 누르고 있는 동안)
+    * **`Triggered`:** 트리거의 조건이 완전히 충족되어 액션을 발동시키는 상태입니다. 이 상태에서 바인딩된 함수가 호출됩니다.
+    * **`Completed`:** 액션이 완료된 상태입니다. (예: `Hold` 트리거의 경우, 키에서 손을 뗐을 때)
+* **조합을 통한 복잡한 패턴 구현 (Implementing Complex Patterns through Combination):** 하나의 매핑에 여러 `UInputTrigger`를 조합하여 더 복잡한 입력 로직을 만들 수 있습니다. 예를 들어, `Tap`과 `Hold`를 함께 사용하여 짧게 누르면 '구르기', 길게 누르면 '달리기'가 되도록 구현할 수 있습니다.
 
 ### **2. 주요 기본 트리거 종류**
 > [[Enhanced Input System]]은 자주 사용되는 여러 종류의 트리거를 기본으로 제공합니다.

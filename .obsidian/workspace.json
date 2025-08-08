@@ -31,7 +31,8 @@
               "title": "그래프 뷰"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -203,18 +204,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f3149f6f43e59636",
+  "active": "f7015cccbb74f973",
   "lastOpenFiles": [
+    "UActorComponent.md",
+    "UAnimationAsset.md",
+    "UAnimBlueprint.md",
     "AStaticMeshActor.md",
     "UEngineSubsystem.md",
-    "UAnimBlueprint.md",
     "APawn.md",
     "AController.md",
     "APlayerStart.md",
     "AGameModeBase.md",
     "UCharacterMovementComponent.md",
     "UWorld.md",
-    "UAnimationAsset.md",
     "ACharacter.md",
     "USkeletalMeshComponent.md",
     "UPrimitiveComponent.md",
@@ -227,7 +229,6 @@
     "PhysicsVolume.md",
     "Subsystem.md",
     "UInputMappingContext.md",
-    "UActorComponent.md",
     "무제.canvas",
     "UEnhancedInputComponent.md",
     "UMovementComponent.md",

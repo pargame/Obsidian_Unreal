@@ -12,16 +12,11 @@
 ### **2. 주요 구성 요소**
 > `IMC` 에디터에서 설정하는 핵심적인 항목들입니다.
 
->[!Mappings 배열]
->> 이 컨텍스트의 핵심인 입력 매핑 목록입니다. 각 항목은 하나의 [[UInputAction|IA]]와 하나 이상의 키를 연결합니다.
->* **`Action`:**
-          매핑할 [[UInputAction|IA]] 에셋을 지정합니다.
->* **`Key`:**
-          해당 액션을 발동시킬 물리적인 키(예: `W`, `Left Mouse Button`)를 지정합니다.
->* **`Triggers`:**
-          액션이 발동될 조건을 정의하는 배열입니다. (예: `Pressed`, `Held`, `Tapped`)
->* **`Modifiers`:**
-          입력의 원시 값을 가공하는 규칙의 배열입니다. (예: `Dead Zone`, `Negate`, `Swizzle`)
+* **Mappings 배열:** 이 컨텍스트의 핵심인 입력 매핑 목록입니다. 각 항목은 하나의 [[UInputAction|IA]]와 하나 이상의 키를 연결합니다.
+    * **`Action`:** 매핑할 [[UInputAction|IA]] 에셋을 지정합니다.
+    * **`Key`:** 해당 액션을 발동시킬 물리적인 키(예: `W`, `Left Mouse Button`)를 지정합니다.
+    * **`Triggers`:** 액션이 발동될 조건을 정의하는 배열입니다. (예: `Pressed`, `Held`, `Tapped`)
+    * **`Modifiers`:** 입력의 원시 값을 가공하는 규칙의 배열입니다. (예: `Dead Zone`, `Negate`, `Swizzle`)
 
 ### **3. 사용 흐름**
 > `IMC`는 그 자체로 동작하지 않으며, [[Subsystem]]을 통해 플레이어에게 적용되어야만 효력을 발휘합니다.
