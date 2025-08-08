@@ -28,7 +28,7 @@
               "type": "markdown",
               "state": {
                 "file": "ACameraActor.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
@@ -211,9 +211,9 @@
   "active": "f3149f6f43e59636",
   "lastOpenFiles": [
     "ACharacter.md",
+    "ACameraActor.md",
     "AController.md",
     "AGameMode.md",
-    "ACameraActor.md",
     "AAIController.md",
     "AActor.md",
     "FTransform.md",
