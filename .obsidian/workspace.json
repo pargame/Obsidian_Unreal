@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "USlider.md",
+                "file": "UActorComponent.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "USlider"
+              "title": "UActorComponent"
             }
           }
         ],
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "USlider.md",
+                "file": "UActorComponent.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "USlider 의 백링크"
+              "title": "UActorComponent 의 백링크"
             }
           },
           {
@@ -142,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "USlider.md",
+                "file": "UActorComponent.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "USlider 의 나가는 링크"
+              "title": "UActorComponent 의 나가는 링크"
             }
           },
           {
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "USlider.md",
+                "file": "UActorComponent.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "USlider 의 개요"
+              "title": "UActorComponent 의 개요"
             }
           },
           {
@@ -210,6 +210,18 @@
   },
   "active": "f3149f6f43e59636",
   "lastOpenFiles": [
+    "UAnimationAsset.md",
+    "UAnimSequence.md",
+    "UAchievementSubsystem.md",
+    "Online Subsystem.md",
+    "FTransform.md",
+    "ETriggerEvent.md",
+    "Delegate.md",
+    "Enhanced Input System.md",
+    "APlayerController.md",
+    "UAnimBlueprint.md",
+    "UAIPerceptionComponent.md",
+    "USlider.md",
     "USkeletalMesh.md",
     "USphereComponent.md",
     "UStaticMeshComponent.md",
@@ -223,19 +235,7 @@
     "UEnhancedInputComponent.md",
     "UDataAsset.md",
     "UAnimMontage.md",
-    "UAnimBlueprint.md",
     "UAnimInstance.md",
-    "Online Subsystem.md",
-    "FTransform.md",
-    "FBodyInstance.md",
-    "Event.md",
-    "ETriggerEvent.md",
-    "Enhanced Input System.md",
-    "Delegate.md",
-    "Data Asset.md",
-    "AStaticMeshActor.md",
-    "APlayerState.md",
-    "APlayerStart.md",
     "무제.canvas"
   ]
 }
