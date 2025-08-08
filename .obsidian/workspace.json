@@ -25,10 +25,14 @@
             "id": "b5f3a8558f808e92",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "UBoxComponent.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "UBoxComponent"
             }
           }
         ],
@@ -119,6 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "UBoxComponent.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "UBoxComponent 의 백링크"
             }
           },
           {
@@ -137,11 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "UBoxComponent.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "나가는 링크"
+              "title": "UBoxComponent 의 나가는 링크"
             }
           },
           {
@@ -165,12 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "UBoxComponent.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "UBoxComponent 의 개요"
             }
           },
           {
@@ -203,8 +210,17 @@
   },
   "active": "b5f3a8558f808e92",
   "lastOpenFiles": [
-    "UProjectileMovementComponent.md",
+    "UBoxComponent.md",
+    "UNavigationSystemV1.md",
+    "USettingsSubsystem.md",
+    "UAchievementSubsystem.md",
+    "Event.md",
+    "UMusicManagerSubsystem.md",
+    "UBehaviorTree.md",
+    "UStaticMesh.md",
+    "USkeleton.md",
     "UStaticMeshComponent.md",
+    "UProjectileMovementComponent.md",
     "UCapsuleComponent.md",
     "FTransform.md",
     "ULocalPlayerSubsystem.md",
@@ -220,15 +236,6 @@
     "ACameraActor.md",
     "UDataAsset.md",
     "AGameStateBase.md",
-    "PlayerCameraManager.md",
-    "USkeleton.md",
-    "UAnimInstance.md",
-    "USkeletalMesh.md",
-    "UPhysicsAsset.md",
-    "Enhanced Input System.md",
-    "UAnimMontage.md",
-    "UAnimSequence.md",
-    "UPrimaryDataAsset.md",
     "무제.canvas"
   ]
 }
