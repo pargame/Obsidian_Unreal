@@ -206,6 +206,10 @@
   },
   "active": "f7015cccbb74f973",
   "lastOpenFiles": [
+    "UAnimMontage.md",
+    "UAnimSequence.md",
+    "UPrimaryDataAsset.md",
+    "UObject.md",
     "UActorComponent.md",
     "UAnimationAsset.md",
     "UAnimBlueprint.md",
@@ -228,10 +232,6 @@
     "UWorldSubsystem.md",
     "PhysicsVolume.md",
     "Subsystem.md",
-    "UInputMappingContext.md",
-    "무제.canvas",
-    "UEnhancedInputComponent.md",
-    "UMovementComponent.md",
-    "UInputAction.md"
+    "무제.canvas"
   ]
 }
