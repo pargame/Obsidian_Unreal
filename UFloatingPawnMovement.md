@@ -1,4 +1,3 @@
-
 > **중력의 영향을 받지 않고 자유롭게 공간을 떠다니는 [[APawn]]을 위한 '이동 엔진'입니다.** 주로 비행기, 우주선, 유령, 관전 카메라(Spectator)처럼 땅에 발을 붙이지 않는 캐릭터를 구현하는 데 사용됩니다.
 
 ### **1. 주요 역할 및 책임**
@@ -17,7 +16,7 @@
     최대 속도에 도달하기까지의 가속도입니다. 값이 클수록 더 빨리 최고 속도에 도달합니다.
 * **`Deceleration`:**
     입력이 없을 때 감속되는 정도입니다. 값이 클수록 더 빨리 멈춥니다.
-* **`AddInputVector(FVector WorldDirection, float ScaleValue)`:**
+* **`AddInputVector(FVector WorldDirection, float ScaleValue)`:
     월드 좌표계 기준으로 특정 방향으로 이동 입력을 추가합니다. 이 입력은 매 프레임마다 누적되어 최종 이동 방향을 결정합니다.
 * **`UpdatedComponent`:**
     이 무브먼트 컴포넌트가 실제로 움직일 대상 컴포넌트입니다. 보통 [[APawn]]의 루트 컴포넌트(예: [[UCapsuleComponent]], [[UStaticMeshComponent]])가 됩니다.
