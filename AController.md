@@ -22,9 +22,9 @@
 * `GetCharacter()`:
 	제어 중인 [[APawn]]이 [[ACharacter]]일 경우, 캐스팅된 포인터를 편리하게 반환합니다.
 * `OnPossess(APawn* InPawn)`:
-	`Possess` 함수가 성공적으로 실행된 직후 호출되는 이벤트 함수입니다. 빙의 시점에 필요한 초기화 로직을 여기에 작성합니다.
+	`Possess` 함수가 성공적으로 실행된 직후 호출되는 [Event|이벤트] 함수입니다. 빙의 시점에 필요한 초기화 로직을 여기에 작성합니다.
 * `OnUnPossess(APawn* InPawn)`:
-	`UnPossess` 함수가 실행된 직후 호출되는 이벤트 함수입니다.
+	`UnPossess` 함수가 실행된 직후 호출되는 [Event|이벤트] 함수입니다.
 * `PlayerState`:
 	컨트롤러에 연결된 [[APlayerState]]에 대한 참조입니다. 서버에서 클라이언트로 복제되어 모든 클라이언트가 다른 플레이어의 상태를 알 수 있게 합니다.
 * `SetControlRotation(const FRotator& NewRotation)`:

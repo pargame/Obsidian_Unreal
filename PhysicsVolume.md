@@ -25,8 +25,8 @@
       여러 [[PhysicsVolume]]이 겹쳐 있을 때, 어떤 `Volume`의 설정을 적용할지 결정합니다. 더 높은 `Priority` 값을 가진 `Volume`이 우선권을 갖습니다.
 
 ### **3. 주요 이벤트**
-> [[AActor]]가 `Volume`에 들어오고 나가는 순간을 감지하여 특정 로직을 실행할 수 있는 이벤트들입니다.
+> [[AActor]]가 `Volume`에 들어오고 나가는 순간을 감지하여 특정 로직을 실행할 수 있는 [[Event|이벤트]]들입니다.
 * `OnActorEnteredVolume`:
-      [[AActor]]가 이 [[PhysicsVolume]] 안으로 처음 들어왔을 때 호출되는 이벤트입니다.
+      [[AActor]]가 이 [[PhysicsVolume]] 안으로 처음 들어왔을 때 호출되는 [[Event|이벤트]]입니다.
 * `OnActorLeftVolume`:
 	[[AActor]]가 이 [[PhysicsVolume]] 밖으로 나갔을 때 호출되는 이벤트입니다.

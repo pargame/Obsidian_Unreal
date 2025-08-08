@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Event.md",
-                "mode": "preview",
+                "file": "Enhanced Input System.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Event"
+              "title": "Enhanced Input System"
             }
           }
         ],
@@ -103,8 +103,7 @@
               "title": "APlayerController"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -124,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Event.md",
+                "file": "Enhanced Input System.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Event 의 백링크"
+              "title": "Enhanced Input System 의 백링크"
             }
           },
           {
@@ -143,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Event.md",
+                "file": "Enhanced Input System.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Event 의 나가는 링크"
+              "title": "Enhanced Input System 의 나가는 링크"
             }
           },
           {
@@ -172,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Event.md",
+                "file": "Enhanced Input System.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Event 의 개요"
+              "title": "Enhanced Input System 의 개요"
             }
           },
           {
@@ -213,30 +212,30 @@
   "lastOpenFiles": [
     "Delegate.md",
     "Data Asset.md",
+    "AStaticMeshActor.md",
+    "APlayerState.md",
+    "APlayerStart.md",
+    "APlayerController.md",
+    "APlayerCameraManager.md",
+    "APawn.md",
+    "AGameStateBase.md",
+    "AGameModeBase.md",
+    "AGameMode.md",
+    "AController.md",
+    "ACharacter.md",
+    "ACameraActor.md",
+    "AAIController.md",
+    "AActor.md",
+    "Event.md",
     "UBoxComponent.md",
     "UNavigationSystemV1.md",
     "USettingsSubsystem.md",
     "UAchievementSubsystem.md",
-    "Event.md",
     "UMusicManagerSubsystem.md",
     "UBehaviorTree.md",
     "UStaticMesh.md",
     "USkeleton.md",
     "UStaticMeshComponent.md",
-    "UProjectileMovementComponent.md",
-    "UCapsuleComponent.md",
-    "FTransform.md",
-    "ULocalPlayerSubsystem.md",
-    "ETriggerEvent.md",
-    "FBodyInstance.md",
-    "UCameraShake.md",
-    "AAIController.md",
-    "UAnimBlueprint.md",
-    "Subsystem.md",
-    "UActorComponent.md",
-    "APlayerState.md",
-    "APlayerCameraManager.md",
-    "ACameraActor.md",
     "무제.canvas"
   ]
 }

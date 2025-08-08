@@ -31,7 +31,7 @@
 	결정된 위치(StartSpot)에 결정된 클래스(`GetDefaultPawnClassForController`의 반환값)의 폰을 스폰합니다.
 * `Possess(APawn* InPawn)`: `NewPlayer` 컨트롤러의 이 함수를 호출하여, 방금 스폰된 폰에 대한 제어권을 부여합니다.
 * `K2_OnSetMatchState(FName NewState)`:
-	게임의 매치 상태(MatchState)가 변경될 때 호출되는 블루프린트 이벤트입니다. `WaitingToStart`, `InProgress`, `WaitingPostMatch` 등의 상태에 따라 특정 로직(예: `InProgress` 상태가 되면 모든 플레이어의 `RestartPlayer` 호출)을 실행하는 데 사용됩니다.
+	게임의 매치 상태(MatchState)가 변경될 때 호출되는 블루프린트 [Event|이벤트]입니다. `WaitingToStart`, `InProgress`, `WaitingPostMatch` 등의 상태에 따라 특정 로직(예: `InProgress` 상태가 되면 모든 플레이어의 `RestartPlayer` 호출)을 실행하는 데 사용됩니다.
 
 ### **4. 게임 흐름 및 규칙 관리 (Game Flow & Rule Management)**
 > 게임의 시작, 종료, 승패 조건 등 핵심 규칙을 처리합니다. 게임의 전체적인 맥박과 생명주기를 관장하는 심장과도 같은 역할을 합니다.

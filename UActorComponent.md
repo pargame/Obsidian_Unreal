@@ -10,7 +10,7 @@
       `UActorComponent` 자체는 월드 내의 위치, 회전, 크기(`Transform`)를 가지지 않습니다. 공간적인 개념이 필요 없는 순수한 데이터나 로직을 담기 위해 설계되었습니다. 공간적인 위치가 필요한 [[UActorComponent]]는 자식 클래스인 [[USceneComponent]]를 사용해야 합니다.
 
 ### **2. 핵심 함수 (생명 주기)**
-> [[AActor]]의 생명 주기에 맞춰 자동으로 호출되는 핵심 이벤트 함수들입니다. 개발자는 이 함수들을 오버라이드하여 [[UActorComponent]]의 동작을 구현합니다.
+> [[AActor]]의 생명 주기에 맞춰 자동으로 호출되는 핵심 [[Event|이벤트]] 함수들입니다. 개발자는 이 함수들을 오버라이드하여 [[UActorComponent]]의 동작을 구현합니다.
 * `InitializeComponent()`:
       [[UActorComponent]]가 생성되고 등록될 때 호출됩니다. `BeginPlay`보다 먼저 호출되며, 다른 [[UActorComponent]]에 대한 의존성 설정 등 기본적인 초기화에 사용됩니다.
 * `BeginPlay()`:
@@ -24,7 +24,7 @@
 > 모든 [[UActorComponent]]의 기본이지만, 실제로는 특정 목적에 맞게 확장된 자식 클래스들이 주로 사용됩니다.
 * **[[USceneComponent]]:** `UActorComponent`의 가장 중요한 자식 클래스입니다. `Transform`을 가지고 있어 월드 내에 위치, 회전, 크기를 가질 수 있습니다. 다른 [[USceneComponent]]에 계층적으로 붙을 수 있으며, 화면에 보이거나 물리적 충돌을 하는 모든 [[UActorComponent]]의 부모가 됩니다.
 * **[[UPrimitiveComponent]]:** [[USceneComponent]]의 자식 클래스로, **화면에 렌더링되거나 물리적 충돌을 할 수 있는 모든 것의 기본 형태**입니다. 보이지 않는 순수한 위치 정보만 가진 [[USceneComponent]]와 달리, [[UPrimitiveComponent]]는 시각적 표현(메시)과 물리적 형태(충돌체)를 가질 수 있습니다. 씬에 존재하는 거의 모든 '물체'는 이 [[UActorComponent]]로부터 파생됩니다.	 
-    *  **주요 기능:** 렌더링, 물리 시뮬레이션, 충돌 및 오버랩 이벤트(예: `OnComponentBeginOverlap`), 레이캐스트 감지 등.
+    *  **주요 기능:** 렌더링, 물리 시뮬레이션, 충돌 및 오버랩 [[Event|이벤트]](예: `OnComponentBeginOverlap`), 레이캐스트 감지 등.
 * **기본 도형 [[UActorComponent]] (Basic Shape Components):** [[UPrimitiveComponent]]를 상속받는 가장 기본적인 [[UActorComponent]]입니다. 복잡한 메시 없이 간단한 기하학적 형태로 충돌이나 영역 감지를 위해 주로 사용됩니다.
     * **`UBoxComponent`:** 사각 박스 형태의 충돌체를 가집니다.
     * **`USphereComponent`:** 구 형태의 충돌체를 가집니다.
