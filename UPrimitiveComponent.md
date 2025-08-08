@@ -24,7 +24,7 @@
 * `CollisionResponse`:
       다른 오브젝트 유형(채널)에 어떻게 반응할지를 설정합니다. (예: `Ignore`, `Overlap`, `Block`)
 
-### **3. 주요 이벤트**
+### **3. 주요 [[Event|이벤트]]**
 > 게임플레이 로직을 만드는 데 가장 핵심적으로 사용되는 [[Event|이벤트]] [[Delegate|델리게이트]]들입니다.
 * `OnComponentBeginOverlap`:
       다른 `PrimitiveComponent`와 처음으로 겹치기 시작했을 때 호출됩니다.

@@ -27,9 +27,9 @@
 * **`UBoxComponent`:** 사각 박스 형태의 충돌 컴포넌트입니다.
 * **`USphereComponent`:** 구 형태의 충돌 컴포넌트입니다.
 
-이들은 모두 `UPrimitiveComponent`를 상속받으므로, `OnComponentBeginOverlap`, `OnComponentHit`과 같은 충돌 이벤트를 동일하게 사용할 수 있습니다.
+이들은 모두 `UPrimitiveComponent`를 상속받으므로, `OnComponentBeginOverlap`, `OnComponentHit`과 같은 충돌 [[Event|이벤트]]를 동일하게 사용할 수 있습니다.
 
 ### **4. 사용 예시**
 * **캐릭터:** [[ACharacter]]의 루트 컴포넌트로 사용하여, 월드와의 주된 상호작용(걷기, 부딪히기)을 처리합니다.
-* **아이템 픽업:** 아이템 액터에 `UCapsuleComponent`를 추가하고 오버랩 이벤트가 발생했을 때 플레이어가 아이템을 획득하도록 구현할 수 있습니다.
+* **아이템 픽업:** 아이템 액터에 `UCapsuleComponent`를 추가하고 오버랩 [[Event|이벤트]]가 발생했을 때 플레이어가 아이템을 획득하도록 구현할 수 있습니다.
 * **간단한 공격 판정:** 무기 액터의 끝에 작은 캡슐 컴포넌트를 붙여, 공격 애니메이션 중에 다른 캐릭터의 `UCapsuleComponent`와 겹쳤는지를 검사하여 피격 판정을 할 수 있습니다.

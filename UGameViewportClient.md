@@ -20,7 +20,7 @@
 * `DrawTransition(UCanvas* Canvas)`:
       레벨이 전환될 때(예: 로딩 화면) 화면에 무언가를 그리기 위해 호출되는 함수입니다. 페이드 인/아웃 효과 등을 여기에 구현할 수 있습니다.
 * `ProcessEvent(FEvent* Event)`:
-      운영체제로부터 받은 로우 레벨(low-level) 이벤트를 처리합니다.
+      운영체제로부터 받은 로우 레벨(low-level) [[Event|이벤트]]를 처리합니다.
 * `ViewportConsole`:
       게임 내 콘솔에 대한 참조입니다. 콘솔 명령을 직접 실행하거나 출력 메시지를 추가할 때 사용할 수 있습니다.
 

@@ -3,7 +3,7 @@
 ### **1. 주요 역할 및 책임**
 > `UBoxComponent`는 가장 단순하고 계산 비용이 저렴한 충돌 형태 중 하나로, 다양한 용도로 활용됩니다.
 * **트리거 볼륨 (Trigger Volume):**
-    가장 일반적인 용도입니다. `Collision Preset`을 `OverlapAllDynamic` 등으로 설정하여, 다른 액터가 이 박스 영역에 들어오거나 나가는 것을 감지하는 트리거로 사용됩니다. (예: 문 자동 열림, 특정 구역 진입 시 이벤트 발생)
+    가장 일반적인 용도입니다. `Collision Preset`을 `OverlapAllDynamic` 등으로 설정하여, 다른 액터가 이 박스 영역에 들어오거나 나가는 것을 감지하는 트리거로 사용됩니다. (예: 문 자동 열림, 특정 구역 진입 시 [[Event|이벤트]] 발생)
 * **간단한 충돌체 (Simple Collision):**
     복잡한 메시 충돌이 필요 없는 간단한 오브젝트(예: 스위치, 버튼)의 물리적 경계를 정의하는 데 사용됩니다.
 * **효율적인 물리 계산 (Efficient Physics Calculation):**
@@ -23,7 +23,7 @@
 * **[[USphereComponent]]:** 구 형태의 충돌 컴포넌트입니다.
 * **[[UCapsuleComponent]]:** 캡슐 형태의 충돌 컴포넌트입니다.
 
-이들은 모두 `UPrimitiveComponent`를 상속받으므로, `OnComponentBeginOverlap`, `OnComponentEndOverlap`, `OnComponentHit`과 같은 충돌 이벤트를 동일하게 사용할 수 있습니다.
+이들은 모두 `UPrimitiveComponent`를 상속받으므로, `OnComponentBeginOverlap`, `OnComponentEndOverlap`, `OnComponentHit`과 같은 충돌 [[Event|이벤트]]를 동일하게 사용할 수 있습니다.
 
 ### **4. 사용 예시**
 * **자동문:** 문 액터 앞에 `UBoxComponent`를 트리거로 배치하고, 플레이어가 오버랩되면 문을 여는 타임라인을 재생합니다.

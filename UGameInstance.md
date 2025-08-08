@@ -8,7 +8,7 @@
       게임에 참여하는 [[ULocalPlayer]]들을 생성하고 관리합니다. 화면 분할(Split-screen)을 위해 새로운 로컬 플레이어를 추가하는 등의 작업을 담당합니다.
 * **온라인 세션 관리의 시작점 (Entry Point for Online Session):**
       온라인 세션을 생성(CreateSession)하거나, 다른 세션을 검색(FindSessions)하고, 특정 세션에 참여(JoinSession)하는 등 온라인 기능의 시작점이 되는 경우가 많습니다. 이러한 기능들은 주로 [[Online Subsystem]]을 통해 처리됩니다.
-* **전역 이벤트 처리 (Handling Global Events):**
+* **전역 [[Event|이벤트]] 처리 (Handling Global Events):**
       네트워크 오류, 컨트롤러 연결/해제와 같이 게임 월드와는 독립적으로 발생하는 전역적인 [[Event|이벤트]]를 처리하기에 적합합니다.
 
 ### **2. 핵심 함수**

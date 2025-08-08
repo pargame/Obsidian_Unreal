@@ -1,7 +1,7 @@
 > **[[UInputAction]]이라는 '추상적인 행동'과, 그 행동이 발동되었을 때 실제로 실행될 'C++ 함수'를 연결하는 '전기 배선판'입니다.** 플레이어의 입력이 최종적으로 어떤 코드를 실행할지를 결정하는 바인딩(Binding) 로직을 담당하는 핵심 [[UActorComponent]]입니다.
 
 ### **1. 주요 역할 및 책임**
-> `UEnhancedInputComponent`는 [[APawn]]이나 [[APlayerController]]에 추가되어, [[Enhanced Input System]]의 이벤트와 실제 게임플레이 로직을 연결하는 다리 역할을 합니다.
+> `UEnhancedInputComponent`는 [[APawn]]이나 [[APlayerController]]에 추가되어, [[Enhanced Input System]]의 [[Event|이벤트]]와 실제 게임플레이 로직을 연결하는 다리 역할을 합니다.
 * **액션과 함수의 바인딩 (Binding Actions to Functions):**
       `BindAction()` 함수를 통해, 특정 [[UInputAction]] 애셋이 특정 [[ETriggerEvent]](예: `Triggered`, `Started`, `Completed`) 상태가 되었을 때, 어떤 객체의 어떤 함수를 호출할지를 명확하게 지정합니다.
 * **입력 처리의 종착점 (Destination of Input Processing):**

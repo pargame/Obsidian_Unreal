@@ -9,7 +9,7 @@
 * **물리 기반 애니메이션 (Physics-Based Animation):**
       [[UPhysicsAsset]]을 사용하여 래그돌(Ragdoll) 물리 시뮬레이션을 지원합니다. SetSimulatePhysics(true)를 호출하면, 애니메이션 대신 물리 법칙에 따라 캐릭터가 쓰러지거나 날아가는 효과를 만들 수 있습니다.
 
-  ### **2. 핵심 함수 및 속성**
+### **2. 핵심 함수 및 속성**
 > 컴포넌트의 외형과 애니메이션을 제어하는 데 사용되는 필수적인 변수와 함수들입니다.
 * `SkeletalMesh`:
       화면에 표시할 [[USkeletalMesh]] 애셋을 지정합니다.

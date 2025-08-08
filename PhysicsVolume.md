@@ -9,7 +9,8 @@
 * **터미널 속도 제어 (Terminal Velocity Control):**
       `Volume` 내에서 [[AActor]]가 도달할 수 있는 최대 속도, 특히 최대 낙하 속도를 제한하여 특정 환경(예: 점성이 높은 액체 속)을 표현할 수 있습니다.
 * **캐릭터 이동에 영향 (Influence on Character Movement):**
-      [[UCharacterMovementComponent]]는 자신이 속한 [[PhysicsVolume]]을 항상 확인하고, 그곳의 물리 설정(중력, 부력 등)을 자신의 이동 계산에 즉시 반영합니다.
+      [[UCharacterMo
+      vementComponent]]는 자신이 속한 [[PhysicsVolume]]을 항상 확인하고, 그곳의 물리 설정(중력, 부력 등)을 자신의 이동 계산에 즉시 반영합니다.
 
 ### **2. 핵심 속성**
 > `Volume` 내의 물리 환경을 세밀하게 조정하는 데 사용되는 주요 변수들입니다. 이 값들을 변경하여 원하는 환경을 디자인할 수 있습니다.
@@ -24,9 +25,9 @@
 * `Priority`:
       여러 [[PhysicsVolume]]이 겹쳐 있을 때, 어떤 `Volume`의 설정을 적용할지 결정합니다. 더 높은 `Priority` 값을 가진 `Volume`이 우선권을 갖습니다.
 
-### **3. 주요 이벤트**
+### **3. 주요 [Event|이벤트**
 > [[AActor]]가 `Volume`에 들어오고 나가는 순간을 감지하여 특정 로직을 실행할 수 있는 [[Event|이벤트]]들입니다.
 * `OnActorEnteredVolume`:
       [[AActor]]가 이 [[PhysicsVolume]] 안으로 처음 들어왔을 때 호출되는 [[Event|이벤트]]입니다.
 * `OnActorLeftVolume`:
-	[[AActor]]가 이 [[PhysicsVolume]] 밖으로 나갔을 때 호출되는 이벤트입니다.
+	[[AActor]]가 이 [[PhysicsVolume]] 밖으로 나갔을 때 호출되는 [Event|이벤트입니다.

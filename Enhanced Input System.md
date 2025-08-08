@@ -13,7 +13,7 @@
     *   **[[UEnhancedInputLocalPlayerSubsystem]]:** 플레이어의 현재 상황에 맞는 [[UInputMappingContext]]를 동적으로 추가하거나 제거하여, 활성화된 입력 규칙을 관리하는 **중앙 허브**입니다.
 
 *   **3. 실행 계층 (Execution Layer): "누가" 실행할 것인가?**
-    *   **[[UEnhancedInputComponent]]:** [[UInputAction]]이 발동되었을 때, 실제로 어떤 C++ 함수나 블루프린트 이벤트를 실행할지 **바인딩(연결)**하는 역할을 합니다.
+    *   **[[UEnhancedInputComponent]]:** [[UInputAction]]이 발동되었을 때, 실제로 어떤 C++ 함수나 블루프린트 [Event|이벤트]를 실행할지 **바인딩(연결)**하는 역할을 합니다.
 
 ### **2. 기존 시스템과의 비교**
 | 특징 | 기존 입력 시스템 (Legacy) | 강화된 입력 시스템 (Enhanced) |
