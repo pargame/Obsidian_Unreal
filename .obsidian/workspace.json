@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "`",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,7 +103,8 @@
               "title": "APlayerController"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -208,7 +209,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f3149f6f43e59636",
+  "active": "0719a0c906fc0855",
   "lastOpenFiles": [
     "UPanelWidget.md",
     "Data Asset.md",
