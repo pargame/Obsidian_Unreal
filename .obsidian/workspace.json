@@ -13,26 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UActorComponent.md",
+                "file": "UStaticMeshComponent.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "UActorComponent"
+              "title": "UStaticMeshComponent"
             }
           },
           {
             "id": "b5f3a8558f808e92",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "APlayerState.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "APlayerState"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
             }
           }
         ],
@@ -123,7 +119,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "APlayerState.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +128,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "APlayerState 의 백링크"
+              "title": "백링크"
             }
           },
           {
@@ -142,12 +137,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "APlayerState.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "APlayerState 의 나가는 링크"
+              "title": "나가는 링크"
             }
           },
           {
@@ -171,13 +165,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "APlayerState.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "APlayerState 의 개요"
+              "title": "개요"
             }
           },
           {
@@ -210,32 +203,32 @@
   },
   "active": "b5f3a8558f808e92",
   "lastOpenFiles": [
-    "APlayerCameraManager.md",
+    "UProjectileMovementComponent.md",
+    "UStaticMeshComponent.md",
+    "UCapsuleComponent.md",
+    "FTransform.md",
+    "ULocalPlayerSubsystem.md",
+    "ETriggerEvent.md",
+    "FBodyInstance.md",
+    "UCameraShake.md",
+    "AAIController.md",
+    "UAnimBlueprint.md",
+    "Subsystem.md",
+    "UActorComponent.md",
     "APlayerState.md",
+    "APlayerCameraManager.md",
     "ACameraActor.md",
     "UDataAsset.md",
     "AGameStateBase.md",
     "PlayerCameraManager.md",
     "USkeleton.md",
-    "FTransform.md",
     "UAnimInstance.md",
     "USkeletalMesh.md",
     "UPhysicsAsset.md",
-    "Subsystem.md",
-    "UActorComponent.md",
     "Enhanced Input System.md",
     "UAnimMontage.md",
     "UAnimSequence.md",
     "UPrimaryDataAsset.md",
-    "UObject.md",
-    "UAnimationAsset.md",
-    "UAnimBlueprint.md",
-    "AStaticMeshActor.md",
-    "UEngineSubsystem.md",
-    "APawn.md",
-    "AController.md",
-    "APlayerStart.md",
-    "AGameModeBase.md",
     "무제.canvas"
   ]
 }
