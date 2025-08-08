@@ -25,10 +25,14 @@
             "id": "f3149f6f43e59636",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "UCanvasPanel.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "UCanvasPanel"
             }
           }
         ],
@@ -119,6 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "UCanvasPanel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "UCanvasPanel 의 백링크"
             }
           },
           {
@@ -137,11 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "UCanvasPanel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "나가는 링크"
+              "title": "UCanvasPanel 의 나가는 링크"
             }
           },
           {
@@ -165,12 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "UCanvasPanel.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "UCanvasPanel 의 개요"
             }
           },
           {
@@ -203,6 +210,18 @@
   },
   "active": "f3149f6f43e59636",
   "lastOpenFiles": [
+    "UCanvasPanel.md",
+    "UVerticalBox.md",
+    "UImage.md",
+    "UProgressBar.md",
+    "UHorizontalBox.md",
+    "UGridPanel.md",
+    "UTextBlock.md",
+    "USlider.md",
+    "ULightComponent.md",
+    "UButton.md",
+    "UCameraComponent.md",
+    "UInputComponent.md",
     "AActor.md",
     "PlayerCameraManager.md",
     "Subsystem.md",
@@ -217,18 +236,6 @@
     "UAnimationAsset.md",
     "UAIPerceptionComponent.md",
     "UGameplayStatics.md",
-    "Online Subsystem.md",
-    "USoundBase.md",
-    "UBlackboardComponent.md",
-    "UPhysicsAsset.md",
-    "UPrimaryDataAsset.md",
-    "UObject.md",
-    "UInputTrigger.md",
-    "UInputModifier.md",
-    "UInputMappingContext.md",
-    "UInputAction.md",
-    "UEnhancedInputComponent.md",
-    "UEngineSubsystem.md",
     "무제.canvas"
   ]
 }
