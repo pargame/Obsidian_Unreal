@@ -9,7 +9,7 @@
 * **네트워크 복제 (Network Replication):**
       서버에서 클라이언트로 상태를 복제(`Replicate`)할 수 있는 능력을 갖추고 있습니다. 멀티플레이어 게임의 모든 동기화는 `AActor` 단위로 이루어집니다.
 * **생명 주기 관리 (Lifecycle Management):**
-      월드에 스폰될 때(`BeginPlay`), 매 프레임마다(`Tick`), 그리고 월드에서 사라질 때(`EndPlay`)의 생명 주기 이벤트를 가지고 있어, 개발자가 원하는 시점에 특정 로직을 실행할 수 있습니다.
+      월드에 스폰될 때(`BeginPlay`), 매 프레임마다(`Tick`), 그리고 월드에서 사라질 때(`EndPlay`)의 생명 주기 [[Event|이벤트]]를 가지고 있어, 개발자가 원하는 시점에 특정 로직을 실행할 수 있습니다.
 
 ### **2. 핵심 함수 및 속성**
 > `AActor`의 상태를 제어하고 월드와 상호작용하기 위한 가장 기본적인 도구들입니다.
@@ -22,7 +22,7 @@
 * `Destroy()`:
       이 `AActor`를 월드에서 제거하도록 요청합니다. 실제 파괴는 약간의 지연 이후에 일어납니다.
 * `OnActorBeginOverlap`:
-      다른 `AActor`와 처음으로 겹치기 시작했을 때 호출되는 이벤트입니다.
+      다른 `AActor`와 처음으로 겹치기 시작했을 때 호출되는 [[Event|이벤트]]입니다.
 * `OnActorEndOverlap`:
       다른 `AActor`와의 겹침이 끝났을 때 호출되는 이벤트입니다.
 * `GetComponents(TArray<UActorComponent*>& Components)`:

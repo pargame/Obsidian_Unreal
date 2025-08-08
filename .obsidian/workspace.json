@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UBoxComponent.md",
-                "mode": "source",
+                "file": "Event.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "UBoxComponent"
+              "title": "Event"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "animation blueprint",
+                "query": "이벤트",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,7 +103,8 @@
               "title": "APlayerController"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -123,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "UBoxComponent.md",
+                "file": "Event.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +134,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "UBoxComponent 의 백링크"
+              "title": "Event 의 백링크"
             }
           },
           {
@@ -142,12 +143,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "UBoxComponent.md",
+                "file": "Event.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "UBoxComponent 의 나가는 링크"
+              "title": "Event 의 나가는 링크"
             }
           },
           {
@@ -171,13 +172,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "UBoxComponent.md",
+                "file": "Event.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "UBoxComponent 의 개요"
+              "title": "Event 의 개요"
             }
           },
           {
@@ -210,6 +211,8 @@
   },
   "active": "b5f3a8558f808e92",
   "lastOpenFiles": [
+    "Delegate.md",
+    "Data Asset.md",
     "UBoxComponent.md",
     "UNavigationSystemV1.md",
     "USettingsSubsystem.md",
@@ -234,8 +237,6 @@
     "APlayerState.md",
     "APlayerCameraManager.md",
     "ACameraActor.md",
-    "UDataAsset.md",
-    "AGameStateBase.md",
     "무제.canvas"
   ]
 }
