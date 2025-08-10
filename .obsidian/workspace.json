@@ -11,28 +11,27 @@
             "id": "b5f3a8558f808e92",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "UNavigationSystemV1.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "UNavigationSystemV1"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
             }
           },
           {
             "id": "8bfaab5839cf6e1a",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "FRotator.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "FRotator"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -201,8 +200,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8bfaab5839cf6e1a",
+  "active": "b5f3a8558f808e92",
   "lastOpenFiles": [
+    "UPointLightComponent.md",
+    "FVector.md",
+    "ASpotLight.md",
+    "FAttachmentTransformRules.md",
+    "UShapeComponent.md",
+    "FButtonStyle.md",
+    "FTimerDelegate.md",
+    "FTimerManager.md",
+    "UNavigationSystemV1.md",
+    "FRotator.md",
     "ACharacter.md",
     "AController.md",
     "AGameStateBase.md",
@@ -219,16 +228,6 @@
     "APlayerController.md",
     "UMovementComponent.md",
     "Enhanced Input System.md",
-    "PhysicsVolume.md",
-    "AGameMode.md",
-    "Subsystem.md",
-    "USaveGame.md",
-    "USettingsSubsystem.md",
-    "UPanelWidget.md",
-    "UObject.md",
-    "Delegate.md",
-    "UPrimitiveComponent.md",
-    "UBlackboardComponent.md",
     "무제.canvas"
   ]
 }
