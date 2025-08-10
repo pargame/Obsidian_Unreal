@@ -203,6 +203,7 @@
   },
   "active": "8bfaab5839cf6e1a",
   "lastOpenFiles": [
+    "ACharacter.md",
     "AController.md",
     "AGameStateBase.md",
     "AGameState.md",
@@ -213,7 +214,6 @@
     "AActor.md",
     "AAIController.md",
     "ACameraActor.md",
-    "ACharacter.md",
     "Event.md",
     "AStaticMeshActor.md",
     "APlayerController.md",
