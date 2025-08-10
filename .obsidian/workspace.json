@@ -202,6 +202,7 @@
   },
   "active": "b5f3a8558f808e92",
   "lastOpenFiles": [
+    "AActor.md",
     "UPointLightComponent.md",
     "FVector.md",
     "ASpotLight.md",
@@ -220,7 +221,6 @@
     "APawn.md",
     "Data Asset.md",
     "UProgressBar.md",
-    "AActor.md",
     "AAIController.md",
     "ACameraActor.md",
     "Event.md",
